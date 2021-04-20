@@ -1,0 +1,1362 @@
+<!DOCTYPE html>
+	<html class="sl-root decks export offline loaded">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>SVG Attacks! WTMAsturias2018</title>
+
+		<meta name="description" content="Slides for WTMAsturias 2018">
+
+		<link rel="stylesheet" type="text/css" href="lib/offline-v2.css">
+
+
+
+		<!-- User CSS -->
+		<style id="user-css-output" type="text/css">
+			@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900');
+.reveal {
+  
+
+}
+.reveal {
+  background: radial-gradient(#444444, #000000);
+}
+.reveal .hljs {
+  background-color: transparent;
+}
+.reveal .controls button {
+  color: #b5eb45;
+}
+.reveal .progress span {
+  background: #b5eb45;
+}
+.reveal .slides a {
+  color: #d1dbc2;
+}
+.reveal .slide-number {
+  font-size: 20px;
+}
+.reveal body {
+  color: #d1dbc2;
+}
+.reveal .slides h1,
+.reveal .slides h2,
+.reveal .slides h3,
+.reveal .slides p,
+.reveal .slides ul,
+.reveal .slides li {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+}
+.reveal .slides h1 {
+  font-size: 3.77em;
+  line-height: 1;
+}
+.reveal .slides h2 {
+  font-size: 63px;
+}
+.reveal .slides h3,
+.reveal .slides p,
+.reveal .slides li {
+  font-size: 30px;
+  line-height: 1.3;
+}
+.reveal .slides pre {
+  line-height: 1.1;
+  font-size: 26px;
+  background-color: #000000;
+}
+.reveal .slides pre code {
+  padding: 15px;
+}
+.reveal .slides a:hover,
+.reveal .slides a:hover .underline {
+  color: #d1dbc2;
+}
+.reveal ul.small-text li {
+  font-size: 26px !important;
+}
+.reveal .primary {
+  color: #b5eb45 !important;
+}
+.reveal .secondary {
+  color: #c951ec !important;
+}
+.reveal .tertiary {
+  color: #d1dbc2 !important;
+}
+.reveal .thin {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 100;
+}
+.reveal .light {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+}
+.reveal .regular {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+}
+.reveal .bold {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+}
+.reveal .black {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+}
+.reveal p.code-title,
+.reveal span.code-title {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+}
+.reveal .underline {
+  text-decoration: none;
+  border-bottom: 1px solid #d1dbc2 !important;
+}
+.reveal a.link {
+  font-size: 20px;
+}
+.reveal .slides .special {
+  margin-bottom: 20px;
+}
+.reveal div.controls-arrow {
+  color: #b5eb45 !important;
+}
+.reveal div.progress span {
+  background-color: #b5eb45 !important;
+}
+
+		</style>
+	</head>
+	<body class="reveal-viewport theme-font-montserrat theme-color-grey-blue">
+		<div class="reveal">
+			<div class="slides">
+				<section data-id="6c59c7373708fe4911b8a0cf85e4e91a" data-background-image="wtmasturias/5392e9d1a8836520ddc9758b385fba4c.jpg"></section><section class="stack" data-id="cb372c6ed8e7f3b3eab0a5b2033eeacb"><section data-id="f13b81265e038198aa298a945213e05b">
+
+
+
+
+<div class="sl-block" data-block-type="image" style="width: 384px; height: 366px; left: 283px; top: 0px; min-width: 4px; min-height: 4px;" data-block-id="6df9e782e760998499377c9f6419b4cb">
+    <div class="sl-block-content" style="z-index: 11;" data-inline-svg="false">
+        <img style="" data-natural-width="196" data-natural-height="187" data-lazy-loaded="" data-src="wtmasturias/4c83bfb09ed3bc47ce175e033ff549b5.svg">
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="width: 241px; left: 355px; top: 366px; height: auto;" data-block-id="0329ee1a30d7c039d4cf8b65de4b5bf2">
+    <div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle" style="z-index: 12; text-align: center;">
+        <p>
+            <a href="https://twitter.com/carmenansio" target="_blank">
+                <span class="u-dir username">
+                    <span class="u-linkComplex-target underline">@carmenansio</span>
+                </span>
+            </a>
+        </p>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" data-block-id="1fff38142760158b2df166a0702bd01d" style="height: auto; min-width: 30px; min-height: 30px; width: 395px; left: 272px; top: 504px;">
+    <div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; line-height: 0.975;" data-fragment-index="1" data-has-line-height="">
+<p><strong><span style="color:rgb(240, 240, 241)">CX Team</span></strong></p>
+
+<p><span style="color:rgb(240, 240, 241)">UX/UI - Frontend Designer</span></p>
+</div>
+</div>
+<div class="sl-block" data-block-type="image" data-block-id="6519a11bd24ffa88a49f047cb0f51e52" style="min-width: 4px; min-height: 4px; width: 271px; height: 60px; left: 340px; top: 432px;">
+    <div class="sl-block-content fragment" style="z-index: 14;" data-inline-svg="true" data-fragment-index="0">
+        <img data-natural-width="86" data-natural-height="19" style="" data-lazy-loaded="" data-src="wtmasturias/c22a2f2ba086c31dee417bff173e80df.svg">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="86" height="19" viewbox="0 0 86 19" version="1.1" preserveaspectratio="xMidYMid meet">
+            <title>desigual</title>
+            <desc>Created with Sketch.</desc>
+            <defs></defs>
+            <g id="Page-1" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+                <path style="fill: white;" d="M36.412,11.673 C36.308,14.682 33.692,15.533 31.14,15.533 C28.711,15.533 25.97,14.578 25.97,11.693 C25.97,10.8 26.531,9.223 28.711,8.788 C30.33,8.434 32.696,8.248 32.696,7.23 C32.696,6.483 31.762,6.421 31.181,6.421 C30.745,6.421 30.35,6.504 30.06,6.691 C29.769,6.878 29.603,7.167 29.603,7.624 L26.345,7.624 C26.468,4.822 28.939,4.137 31.306,4.137 C33.423,4.137 36.224,4.843 36.224,7.438 C36.224,10.343 33.443,10.407 31.223,10.967 C30.599,11.112 29.499,11.278 29.499,12.108 C29.499,12.96 30.474,13.249 31.16,13.249 C31.658,13.249 32.136,13.126 32.468,12.877 C32.821,12.606 33.049,12.212 33.049,11.673 L36.412,11.673 Z M75.811,15.222 L79.339,15.222 L79.339,0.402 L75.811,0.402 L75.811,15.222 Z M68.085,7.77 L64.785,7.77 C64.846,6.359 65.512,5.446 66.466,4.885 C67.422,4.345 68.667,4.137 69.891,4.137 C72.444,4.137 74.914,4.698 74.914,7.749 L74.914,12.46 C74.914,13.375 74.914,14.371 75.329,15.221 L71.78,15.221 C71.656,14.889 71.613,14.557 71.572,14.205 C70.659,15.16 69.31,15.533 68.022,15.533 C65.968,15.533 64.349,14.495 64.349,12.274 C64.349,8.766 68.169,9.036 70.618,8.537 C71.22,8.414 71.551,8.207 71.551,7.541 C71.551,6.732 70.576,6.421 69.849,6.421 C68.874,6.421 68.252,6.857 68.085,7.77 L68.085,7.77 Z M67.878,12.129 C67.878,13 68.562,13.354 69.351,13.354 C71.032,13.354 71.593,12.399 71.51,10.177 C71.011,10.489 70.099,10.551 69.331,10.759 C68.542,10.945 67.878,11.278 67.878,12.129 L67.878,12.129 Z M63.81,4.449 L63.81,15.221 L60.386,15.221 L60.386,13.748 C59.679,14.848 58.31,15.533 57.064,15.533 C53.971,15.533 53.079,13.748 53.079,10.925 L53.079,4.449 L56.607,4.449 L56.607,10.697 C56.607,12.129 57.23,12.626 58.351,12.626 C59.119,12.626 60.281,12.129 60.281,10.219 L60.281,4.449 L63.81,4.449 Z M52.293,4.449 L52.293,13.915 C52.293,15.678 51.96,19 46.917,19 C44.405,19 42.038,18.439 41.623,15.554 L45.152,15.554 C45.235,16.032 45.422,16.322 45.754,16.488 C46.066,16.654 46.501,16.716 47.042,16.716 C48.721,16.716 48.889,15.533 48.889,14.205 L48.889,13.187 C48.203,14.184 47.124,14.764 45.982,14.764 C42.724,14.764 41.25,12.44 41.25,9.41 C41.25,6.545 42.931,4.137 45.982,4.137 C47.269,4.137 48.245,4.698 48.868,5.799 L48.909,4.449 L52.293,4.449 Z M48.951,9.555 C48.951,8.184 48.411,6.835 46.834,6.835 C45.276,6.835 44.778,8.207 44.778,9.535 C44.778,10.8 45.359,12.067 46.813,12.067 C48.308,12.067 48.951,10.904 48.951,9.555 L48.951,9.555 Z M37.104,3.1 L40.633,3.1 L40.633,0.401 L37.104,0.401 L37.104,3.1 Z M37.105,15.222 L40.633,15.222 L40.633,4.449 L37.105,4.449 L37.105,15.222 Z M25.543,10.697 L17.635,10.697 C17.697,12.17 18.548,13.145 20.042,13.145 C20.892,13.145 21.724,12.752 22.055,11.963 L25.356,11.963 C24.712,14.454 22.409,15.533 20.001,15.533 C16.493,15.533 14.106,13.416 14.106,9.804 C14.106,6.504 16.741,4.137 19.918,4.137 C23.778,4.137 25.709,7.044 25.543,10.697 L25.543,10.697 Z M17.635,8.725 L22.013,8.725 C21.952,7.521 21.101,6.524 19.918,6.524 C18.673,6.524 17.842,7.417 17.635,8.725 L17.635,8.725 Z M82.058,12.005 L82.058,12.725 L82.673,12.725 C82.924,12.725 83.058,12.617 83.058,12.36 C83.058,12.113 82.924,12.005 82.673,12.005 L82.058,12.005 Z M81.495,14.124 L81.495,11.57 L82.873,11.57 C83.331,11.57 83.621,11.888 83.621,12.274 C83.621,12.575 83.499,12.799 83.217,12.915 C83.492,12.992 83.57,13.261 83.589,13.519 C83.6,13.68 83.596,13.98 83.696,14.124 L83.135,14.124 C83.066,13.962 83.074,13.715 83.045,13.512 C83.005,13.244 82.901,13.126 82.619,13.126 L82.058,13.126 L82.058,14.124 L81.495,14.124 Z M80,12.846 C80,11.455 81.129,10.327 82.519,10.327 C83.911,10.327 85.04,11.455 85.04,12.846 C85.04,14.238 83.911,15.366 82.519,15.366 C81.129,15.366 80,14.238 80,12.846 L80,12.846 Z M80.58,12.846 C80.58,13.918 81.448,14.787 82.519,14.787 C83.592,14.787 84.46,13.918 84.46,12.846 C84.46,11.775 83.592,10.906 82.519,10.906 C81.448,10.906 80.58,11.775 80.58,12.846 L80.58,12.846 Z M0,15.219 L0,0.399 L6.372,0.399 C10.918,0.399 13.636,3.16 13.636,7.747 C13.636,12.604 10.877,15.219 6.372,15.219 L0,15.219 Z M3.861,3.72 L3.861,11.899 L5.687,11.899 C8.614,11.837 9.776,10.695 9.776,7.727 C9.776,5.028 8.323,3.72 5.687,3.72 L3.861,3.72 L3.861,3.72 Z" id="desigual" fill="#1A1919"></path>
+            </g>
+        </svg>
+    </div>
+</div></section><section data-id="6fcb916f7f385584a29be2f255c847d4"><div class="sl-block" data-block-type="image" data-block-id="80d9af3d621247ff523142e009dd3dc4" style="min-width: 4px; min-height: 4px; width: 1024px; height: 592px; left: 0px; top: 0px;"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="1900" data-natural-height="1099" data-lazy-loaded="" data-src="wtmasturias/408c56bf917b6182521b740e1f40378d.JPG"></div></div></section><section data-id="5651070a3064b24104b0af44e896c020"><div class="sl-block" data-block-type="text" style="width: 801px; left: 113px; top: 248px; height: auto;" data-block-id="fa273c4c9df5475b8ad0580bfef65cc4">
+    <div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; transition-duration: 0.6s; transition-delay: 0.6s;" dir="ui" data-animation-type="slide-down">
+        <h2 class="primary">
+            <strong>Recursos</strong>
+        </h2>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="width: 320px; left: 353px; top: 331px; height: auto;" data-block-id="db493ea1851ffdfa95b4222e56770e89">
+    <div class="sl-block-content fragment" data-placeholder-tag="h2" data-placeholder-text="Subtitle" style="z-index: 11; text-align: center;" data-fragment-index="0">
+        <p>
+            <strong>
+                <a href="https://github.com/carmenansio/WTMAsturias2018" target="_blank">
+                    <span class="u-dir username">
+                        <span class="u-linkComplex-target underline">WTMAsturias 2018</span>
+                    </span>
+                </a>
+            </strong>
+        </p>
+    </div>
+</div></section></section><section data-id="d5c524a05c2d2c3abdc4816bd8e8700f"><div class="sl-block" data-block-type="text" style="width: 869px; left: 78px; top: 49px; height: auto;" data-block-id="15e92e3114dc66b312f88abbe962c50c">
+    <div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 12; text-align: left;">
+<h3><span style="font-size:2.5em"><strong>Road Map</strong></span></h3>
+</div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 868px; left: 79px; top: 169px;" data-block-id="bfb3d8c49705b2409913188a9dd67c9b">
+    <div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; text-align: center;" data-fragment-index="0">
+<ul>
+	<li class="visible">
+	<h3>
+<span style="color:rgb(255, 255, 255); text-align:left">Creating </span>&amp;<span style="color:rgb(255, 255, 255); text-align:left"> Exporting  </span>
+</h3>
+	</li>
+	<li class="visible">
+	<h3><span style="color:rgb(255, 255, 255); text-align:left">Optimizing SVGs</span></h3>
+	</li>
+	<li class="visible">
+	<h3>Styling SVGs with CSS</h3>
+	</li>
+	<li class="visible">Embedding SVGs</li>
+	<li class="visible">Making Accesible</li>
+	<li class="visible">Making SVGs Responsive</li>
+	<li class="visible">Animating SVGs with CSS</li>
+	<li class="visible">More...</li>
+</ul>
+</div>
+</div></section><section class="stack" data-id="397ceb4fa78ad4c48909785ceb432a87"><section data-id="f714e2b1737891a932e78a03a6fcf00c"><div class="sl-block" data-block-type="text" style="width: 790px; left: 117px; top: 240px; height: auto;" data-block-id="1676530586a6761ce496bf2ace7318e2">
+    <div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-down">
+<h3><span style="font-size:2.5em"><strong>Unidentified <span class="primary">Graphic</span> </strong></span></h3>
+</div>
+</div></section><section data-id="18d69a9e3c5f400da77af55e5feb9a28">
+<div class="sl-block" data-block-type="image" style="width: 270px; height: 360px; left: 377px; top: 111px; min-width: 4px; min-height: 4px;" data-block-id="0049a61eba6b09f0500597d0115bcabf">
+    <div class="sl-block-content" style="z-index: 11;">
+        <img style="visibility: visible;" data-natural-width="600" data-natural-height="800" data-lazy-loaded="" data-src="wtmasturias/26070324538b731ccf816b3ef93324b9.jpg">
+    </div>
+</div>
+
+<div class="sl-block" data-block-type="text" style="width: 274px; left: 375px; top: 41px; height: auto;" data-block-id="ed988dab3106fdb42a557d99a65f47f4">
+    <div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 12;">
+<h3><span style="font-size:1.6em"><strong>Chris Lilley</strong></span></h3>
+</div>
+</div>
+<div class="sl-block" data-block-type="text" data-block-id="84cebc96a4cdaeb07372f4c19e6974fd" style="height: auto; min-width: 30px; min-height: 30px; width: 173px; left: 426px; top: 524px;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;" data-fragment-index="1">
+<h3 style="color:rgb(255, 255, 255)"><span style="font-size:1.0em"><strong><span class="primary">@SVGeesus</span></strong></span></h3>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="ea2eb5a4e2fee1a4f8d310b98c0d4d90" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 212px; top: 485px;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;" data-fragment-index="0">
+<h3><span style="font-size:0.7em"><span style="color:#FFFFFF"><span style="text-align:justify">Technical </span><span class="lang_en" style="text-align:justify">Director</span><span style="text-align:justify"> at the </span><span class="lang_en" style="text-align:justify">World</span><span style="text-align:justify"> Wide Web Consortium (W3C)</span></span></span></h3>
+</div></div></section></section><section class="stack" data-id="9e1bed1b1c72a9fdf3410dadc49cbe84"><section data-id="9162832fa04d7275ce809fb2d14739f4"><div class="sl-block" data-block-type="text" style="width: 515px; left: 255px; top: 240px; height: auto;" data-block-id="f9b18bda98cea24a59b9cc79369c843f">
+    <div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h3><span style="font-size:2.5em"><strong>First <span class="primary">Contact</span> </strong></span></h3>
+</div>
+</div></section><section data-id="37c92f97d75c9ab3b17c24ba1514d289"><div class="sl-block" data-block-type="text" style="width: 869px; left: 79px; top: 45px; height: auto;" data-block-id="eaf9d9d0491fd63a4b74895faa5065e9">
+    <div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; text-align: center;">
+<h3><span style="font-size:1.4em"><strong>Scalable <span class="primary">Vector</span> Graphic </strong></span></h3>
+</div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 711px; left: 158px; top: 184px;" data-block-id="e2d99f909be8f6e7fd22c31fb0955601">
+    <div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" data-fragment-index="0">
+<ul>
+	<li>W3C standard</li>
+	<li>
+	<h3><span style="color:rgb(255, 255, 255); text-align:left">Independent resolution (bitmaps)</span></h3>
+	</li>
+	<li>More semantic</li>
+	<li>Easily scalable for responsive</li>
+	<li style="font-size:inherit">Small filesize if you design for performance</li>
+	<li>JS and CSS manipulation</li>
+	<li>Easy to make it accesible</li>
+	<li>Easy &amp; Fun to animate</li>
+</ul>
+</div>
+</div></section><section data-id="31e4fd6855c1029858f105149625b8b4">
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 869px; left: 78px; top: 45px;" data-block-id="e37242e52091ef965f1f13c4e8d0ccc5">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" dir="ui">
+<h3><span style="font-size:1.4em"><span class="bold primary">Good</span> browser support</span></h3>
+</div>
+</div>
+<div class="sl-block" data-block-type="image" data-block-id="93f2847bc3856483058938867d79fbf1" style="min-width: 4px; min-height: 4px; width: 1024px; height: 231px; left: 0px; top: 201px;">
+    <div class="sl-block-content" style="z-index: 12;">
+        <img style="" data-natural-width="1273" data-natural-height="287" data-lazy-loaded="" data-src="wtmasturias/6a389b8f00cf6ff028ce2b7568cbcac2.png">
+    </div>
+</div></section><section data-id="d1fad135e726f1d644bca6239406cdf2"><div class="sl-block" data-block-type="iframe" data-block-id="4dfec4ec6f0a713312981e8e39070c30" style="min-width: 30px; min-height: 30px; width: 1024px; height: 257px; left: 0px; top: 247px;">
+    <div class="sl-block-content fragment" style="z-index: 11;" data-fragment-index="0">
+        <iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="//codepen.io/carmenansio/embed/f0355552e14aea838164208d4eba4251/?height=265&amp;theme-id=0&amp;default-tab=result&amp;embed-version=2&amp;editable=true"></iframe>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="width: 790px; left: 117px; top: 45px; height: auto;" data-block-id="f3e26487400b213caa58e8a110197263">
+    <div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 12;">
+<h3><span style="font-size:1.4em"><strong>Basic <span class="primary">Shapes</span></strong></span></h3>
+</div>
+</div>
+
+<div class="sl-block" data-block-type="text" data-block-id="94d193204c15798eebe556ca5852e9dc" style="height: auto; min-width: 30px; min-height: 30px; width: 869px; left: 71px; top: 125px;">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; background-color: rgba(0, 0, 0, 0); text-align: center;">
+<h3><span style="font-size:0.7em">&lt;circle/&gt;   &lt;rect/&gt;   &lt;polygon/&gt;   &lt;line/&gt;   &lt;polyline/&gt;   &lt;path/&gt; </span></h3>
+</div>
+</div></section></section><section class="stack" data-id="f74c2e63b3c9366d3b649e7067457b5e"><section data-id="d7e157807bedd3f09f384d02d608db72"><div class="sl-block" data-block-type="text" style="width: 632px; left: 196px; top: 240px; height: auto;" data-block-id="ed7ea1efa7f6aa712d3354b30cd06b70">
+    <div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-down">
+<h3><span style="font-size:2.5em"><strong><span class="primary">SVG </span>Autopsy</strong></span></h3>
+</div>
+</div></section><section data-id="341fc3bcce498978bfa35cadd050cef8"><div class="sl-block" data-block-type="iframe" data-block-id="412f95c9c38468c69a9339b18490ec07" style="min-width: 30px; min-height: 30px; width: 1024px; height: 432px; left: 0px; top: 144px;">
+    <div class="sl-block-content" style="z-index: 10;">
+        <iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://www.sarasoueidan.com/demos/interactive-svg-coordinate-system/"></iframe>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="width: 790px; left: 117px; top: 45px; height: auto;" data-block-id="eb8b3d828822cf08c9e220ae7978ecae">
+    <div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 12;">
+        <h3>
+            <span style="font-size:1.4em">
+                <strong>
+                    <span class="primary">Sara Soueidan</span> Coordinate System
+                </strong>
+            </span>
+        </h3>
+    </div>
+</div></section><section data-id="c9fe7b149b4b98467f1924e245d24802"><div class="sl-block" data-block-type="text" style="width: 869px; left: 78px; top: 72px; height: auto;" data-block-id="15848409e6004b039bf46151d562f21a">
+    <div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-down">
+<h3><span style="font-size:1.4em"><strong><span class="primary">&lt;path&gt;</span> </strong> element</span></h3>
+</div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 870px; left: 78px; top: 174px;" data-block-id="2ca06d2fc43dc304d54cce25d4e4283b">
+    <div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" dir="ui" data-fragment-index="0">
+<ul>
+	<li>
+	<h3><span style="color:#FFFFFF"><span style="font-size:1.0em">The path element takes a single attribute to describe what it draws: the <strong>"d" attribute</strong></span></span></h3>
+	</li>
+	<li>
+	<h3><span style="color:#FFFFFF"><span style="font-size:1.0em"><span style="text-align:start">The <strong>letters are </strong></span><strong>commands</strong></span></span></h3>
+	</li>
+	<li>
+	<h3><span style="color:#FFFFFF">The numbers are <strong>passing values</strong> to those commands</span></h3>
+	</li>
+	<li>Commas are optional (spaces)</li>
+	<li>The <strong>UPPERCASE</strong> is the <strong>absolute</strong> and the <strong>lowercase</strong> is the <strong>relative</strong>
+</li>
+</ul>
+</div>
+</div></section><section data-id="91156a48c3247888dbbcbc76c0d9d619"><div class="sl-block" data-block-type="code" data-block-id="7ac0bc6edbf8d0e20053a38c198bfa43" style="min-width: 30px; min-height: 30px; width: 286px; height: 288px; left: 209px; top: 257px;"><div class="sl-block-content notranslate" data-highlight-theme="monokai" style="z-index: 12; font-size: 90%;"><pre class="stylus"><code>&lt;svg viewBox="0 0 74.9 74.7"&gt;
+&lt;path class="files" d="
+M 0.9,74.2
+l 25.2-37.4 
+L 2,0.5
+h 23.6
+L 38,21.9
+L 50,0.5
+h 23
+l -24.2,36
+l 25.2,37.7
+h -24
+L 37.2,52
+L 24.4,74.2
+H 0.9
+z"/&gt;
+&lt;/svg&gt;</code></pre></div></div>
+<div class="sl-block" data-block-type="code" data-block-id="5c0aae6a21681945b7cba8e2bb739d11" style="min-width: 30px; min-height: 30px; width: 869px; height: 83px; left: 78px; top: 144px;"><div class="sl-block-content notranslate" data-highlight-theme="monokai" style="z-index: 13; font-size: 90%;"><pre class="stylus"><code>&lt;svg viewBox="0 0 74.9 74.7"&gt;
+&lt;path class="files" d="M0.9,74.2l25.2-37.4L2,0.5h23.6L38,21.9L50,0.5h23l-24.2,36l25.2,
+37.7h-24L37.2,52L24.4,74.2H0.9z"/&gt;
+&lt;/svg&gt;</code></pre></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="a742da7019db84f42210e58475230293" style="min-width: 4px; min-height: 4px; width: 290px; height: 288px; left: 525px; top: 257px;"><div class="sl-block-content" style="z-index: 14;"><img data-natural-width="318" data-natural-height="316" style="" data-lazy-loaded="" data-src="wtmasturias/7dfcc384bc6b5d3b4b5510a661fd1ff7.png"></div></div>
+<div class="sl-block" data-block-type="text" style="width: 869px; left: 78px; top: 45px; height: auto;" data-block-id="f032bf2210ccf986530e848cda94e57d">
+    <div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 15; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-down">
+<h3><span style="font-size:1.4em"><strong><span class="primary">&lt;path&gt;</span> </strong> reading</span></h3>
+</div>
+</div></section><section data-id="aa24e36fc242ab0285bac7b9c958f8bb"><div class="sl-block" data-block-type="iframe" data-block-id="a41b38de2444b7d470d15870326e6b72" style="min-width: 30px; min-height: 30px; width: 1024px; height: 393px; left: 0px; top: 144px;"><div class="sl-block-content" style="z-index: 10;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="//codepen.io/chriscoyier/embed/NRwANp/?height=265&amp;theme-id=0&amp;default-tab=css,result&amp;embed-version=2&amp;editable=true"></iframe></div></div>
+<div class="sl-block" data-block-type="text" style="width: 790px; left: 117px; top: 45px; height: auto;" data-block-id="49fff6b514528b224a1ab04112c12f4a">
+    <div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;">
+<h3><span style="font-size:1.4em"><strong><span class="primary">&lt;path&gt; <span style="color:#FFFFFF">examples</span></span></strong></span></h3>
+</div>
+</div>
+<div class="sl-block" data-block-type="text" style="width: 422px; left: 593px; top: 537px; height: auto;" data-block-id="061e5d5eeebd26bdf98a9bdfa334cd19">
+    <div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle" style="z-index: 13; text-align: right;" dir="ui">
+<h3><span style="font-size:0.7em">https://codepen.io/chriscoyier/pen/NRwANp</span></h3>
+</div>
+</div></section><section data-id="379893fbfc4e0a2fb7349f798950f5a1"><div class="sl-block" data-block-type="iframe" style="width: 1024px; height: 432px; left: 0px; top: 144px;" data-block-id="fdb1fe722d529a5a945ac6fe0a31c0fd"><div class="sl-block-content" style="z-index: 10;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="//codepen.io/carmenansio/embed/6aacbe5a803cf96bd664cd87fa595e5f/?height=265&amp;theme-id=0&amp;default-tab=html,result&amp;embed-version=2&amp;editable=true"></iframe></div></div>
+<div class="sl-block" data-block-type="text" style="width: 790px; left: 117px; top: 45px; height: auto;" data-block-id="3ba51b08f0ee283bc27598ad992c4967">
+    <div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;">
+<h3><span style="font-size:1.4em"><strong><span class="primary">Groups</span></strong></span></h3>
+</div>
+</div></section><section data-id="bf322802f8aeb2fe67fc9e0828c1f6df"><div class="sl-block" data-block-type="iframe" style="width: 1024px; height: 288px; left: 0px; top: 216px;" data-block-id="060f2af391be11a67c0772c140285b9f"><div class="sl-block-content" style="z-index: 10;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="//codepen.io/carmenansio/embed/42de7fbbaf491f83531a5018529e7a16/?height=265&amp;theme-id=0&amp;default-tab=result&amp;embed-version=2&amp;editable=true"></iframe></div></div>
+<div class="sl-block" data-block-type="text" style="width: 790px; left: 117px; top: 45px; height: auto;" data-block-id="1e81c4739e2162dc6efc64b71d957b07">
+    <div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;">
+<h3><span style="font-size:1.4em"><strong>Image <span class="primary">Mask</span></strong></span></h3>
+</div>
+</div></section><section data-id="f4e6485496fa1764a89190046ef328bd"><div class="sl-block" data-block-type="iframe" style="width: 1024px; height: 288px; left: 0px; top: 216px;" data-block-id="db5b75b64842191ebc4a9d04099029d9"><div class="sl-block-content" style="z-index: 10;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="//codepen.io/carmenansio/embed/061cf6b298dfca81cd1ab128cb184347/?height=265&amp;theme-id=0&amp;default-tab=result&amp;embed-version=2&amp;editable=true"></iframe></div></div>
+<div class="sl-block" data-block-type="text" style="width: 790px; left: 117px; top: 45px; height: auto;" data-block-id="df925c59fd4ce20776fdeca3271e2228">
+    <div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;" dir="ui">
+<h3><span style="font-size:1.4em"><strong><span class="primary">Images</span> and <span class="primary">Filters</span></strong></span></h3>
+</div>
+</div></section><section data-id="f4b7df69cf5ffd5f56c4f33ca26a009d"><div class="sl-block" data-block-type="iframe" style="width: 1024px; height: 288px; left: 0px; top: 216px;" data-block-id="e30e7caf0f2e596ae4fff7dcbd6e371a"><div class="sl-block-content" style="z-index: 10;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="//codepen.io/carmenansio/embed/0fa0d96fac88e8b86aa49f85b7f1e335/?height=265&amp;theme-id=0&amp;default-tab=result&amp;embed-version=2&amp;editable=true"></iframe></div></div>
+
+<div class="sl-block" data-block-type="text" style="width: 790px; left: 117px; top: 45px; height: auto;" data-block-id="b52c14af592a6bbbd5d58ba702d4ac27">
+    <div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 13;">
+<h3><span style="font-size:1.4em"><strong>Viewbox <span class="primary">Clipping</span> </strong></span></h3>
+</div>
+</div></section><section data-id="bbd11ac934065973f2576f2df532e4ec"><div class="sl-block" data-block-type="iframe" style="width: 1024px; height: 216px; left: 0px; top: 215px;" data-block-id="120d80cb529454cf1fbeab28245ecb2c">
+    <div class="sl-block-content" style="z-index: 11;">
+        <iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="//codepen.io/carmenansio/embed/86c7d7b76cd6f95720a62ee538656ba9/?height=265&amp;theme-id=0&amp;default-tab=result&amp;embed-version=2&amp;editable=true"></iframe>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="width: 869px; left: 79px; top: 45px; height: auto;" data-block-id="55f19865cef7400a418b736b6cefbec0">
+    <div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 12;">
+<h3><span style="font-size:1.4em"><strong><span class="primary">PreserveAspectRatio </span>Attribute </strong></span></h3>
+</div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 73px; left: 907px; top: 449px;" data-block-id="e7ba644c371e0d5af5639a6a3509a231">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; text-align: center; font-size: 70%;">
+        <h3 style="font-size:inherit">None</h3>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" data-block-id="026fe440479cbaf7278e811f00c5a034" style="height: auto; min-width: 30px; min-height: 30px; width: 107px; left: 26px; top: 450px;">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; text-align: center; font-size: 70%;">
+        <h3 style="color: rgb(255, 255, 255); font-size: inherit;">xMidYMid meet</h3>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 104px; left: 171px; top: 450px;" data-block-id="39d949b928e904915c34e7c3fdd9ee3d">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; text-align: center; font-size: 70%;">
+        <h3 style="color:rgb(255, 255, 255); font-size:inherit">xMinYMin meet</h3>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 106px; left: 314px; top: 450px;" data-block-id="77961ec00ef8e22d359e58ace26cf931">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; text-align: center; font-size: 70%;">
+        <h3 style="color:rgb(255, 255, 255); font-size:inherit">xMaxYMax meet</h3>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 108px; left: 457px; top: 450px;" data-block-id="584cbf69d5e301b4d225563dc02b9ee5">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17; text-align: center; font-size: 70%;">
+        <h3 style="color:rgb(255, 255, 255); font-size:inherit">xMinYMin slice</h3>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 105px; left: 603px; top: 450px;" data-block-id="72eb35f012ac35d0b3f56a6a5606ca4e">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 18; text-align: center; font-size: 70%;">
+<h3 style="color:rgb(255, 255, 255); font-size:inherit">xMidYMid slice</h3>
+</div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 112px; left: 744px; top: 450px;" data-block-id="f4985856dac139409fb41e10bd4ac4bc">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 19; text-align: center; font-size: 70%;">
+<h3 style="color:rgb(255, 255, 255); font-size:inherit">xMaxYMax slice</h3>
+</div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 869px; left: 78px; top: 125px;" data-block-id="8fc74c3b50d68479d3b445ad445cf467">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 20; text-align: center;">
+<p><span style="font-size:0.7em">*Note that preserveAspectRatio has no effect if no viewbox is set</span></p>
+</div>
+</div></section></section><section class="stack" data-id="3aa695d89564deb6acbe7418069789c9"><section data-id="134e2f33bbad418a97faca243b5d2647"><div class="sl-block" data-block-type="text" style="width: 673px; left: 176px; top: 240px; height: auto;" data-block-id="ebbdff744b6ee1cc7eb23fc53fc2bcab">
+    <div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-down">
+<h3><span style="font-size:2.5em"><strong>The <span class="primary">Workflow</span> </strong></span></h3>
+</div>
+</div></section><section data-id="07d491902acaf87c479aa7502ff606ce">
+<div class="sl-block" data-block-type="image" style="width: 144px; height: 144px; left: 677px; top: 216px; min-width: 4px; min-height: 4px;" data-block-id="7745d30a7f18801a2d7e7b9165fdbe67">
+    <div class="sl-block-content fragment" style="z-index: 11;" data-fragment-index="2">
+        <img style="visibility: visible;" data-natural-width="256" data-natural-height="256" data-lazy-loaded="" data-src="wtmasturias/fca1d545cb778b4cfd31c4ea3331890e.png">
+    </div>
+</div>
+<div class="sl-block" data-block-type="image" style="width: 144px; height: 144px; left: 203px; top: 216px; min-width: 4px; min-height: 4px;" data-block-id="fa0ae474f624df679caa1518f490bf39">
+    <div class="sl-block-content fragment" style="z-index: 13;" data-fragment-index="0">
+        <img data-natural-width="514" data-natural-height="514" style="" data-lazy-loaded="" data-src="wtmasturias/0526abe2ce45af638be49408265402e6.svg">
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="width: 790px; left: 117px; top: 45px; height: auto;" data-block-id="e202fd2126f441a0c8a69879c0661d24">
+    <div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 14;">
+        <h3>
+            <span style="font-size:1.4em">
+                <strong>
+                    <span class="primary">Vector </span>Playground Creation
+                </strong>
+            </span>
+        </h3>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="width: 158px; left: 196px; top: 360px; height: auto;" data-block-id="7d315bf38723d0163955cda5c5b1dbf2">
+    <div class="sl-block-content fragment" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 15;" data-fragment-index="0">
+        <h3>Illustrator</h3>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="width: 158px; left: 434px; top: 360px; height: auto;" data-block-id="72a6edf8a979044df83f4e27beb24e83">
+    <div class="sl-block-content fragment" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 16;" data-fragment-index="1">
+        <h3>Sketch</h3>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="width: 158px; left: 671px; top: 360px; height: auto;" data-block-id="0646cf2058722e6b9a0fb6f7079992d7">
+    <div class="sl-block-content fragment" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 17;" data-fragment-index="2">
+        <h3>Inkscape</h3>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="width: 237px; left: 711px; top: 465px; height: auto;" data-block-id="df60ed6ce4946f6a2e324e0537201717">
+    <div class="sl-block-content fragment" data-placeholder-tag="h2" data-placeholder-text="Subtitle" style="z-index: 18; text-align: right;" data-fragment-index="3" dir="ui">
+        <p>
+            <span style="font-size:0.7em">
+                <a href="https://www.slant.co/topics/1410/~vector-graphics-editors" target="_blank">
+                    <span class="u-dir username">
+                        <span class="u-linkComplex-target underline">Vector software list</span>
+                    </span>
+                </a>
+            </span>
+        </p>
+    </div>
+</div>
+<div class="sl-block" data-block-type="image" data-block-id="854682fad2dd07518d6d0ffa83b15acf" style="min-width: 4px; min-height: 4px; width: 144px; height: 130px; left: 440px; top: 216px;">
+    <div class="sl-block-content fragment" style="z-index: 19;" data-fragment-index="1">
+        <img data-natural-width="494" data-natural-height="447" style="" data-lazy-loaded="" data-src="wtmasturias/087095d8725116f583579c1b5a8fdef9.svg">
+    </div>
+</div></section><section data-id="6749f305082ad007bf75a90443fa6ecd">
+
+<div class="sl-block" data-block-type="image" style="width: 261px; height: 348px; left: 623px; top: 222px; min-width: 4px; min-height: 4px;" data-block-id="32a3c315d5e1d0fe71bfd3e1525e81d7">
+    <div class="sl-block-content fragment" style="z-index: 15;" data-fragment-index="0">
+        <img data-natural-width="310" data-natural-height="414" style="" data-lazy-loaded="" data-src="wtmasturias/1cb083e583946f08acd3af324fae1aa9.png">
+    </div>
+</div>
+<div class="sl-block" data-block-type="image" style="width: 262px; height: 348px; left: 248px; top: 222px; min-width: 4px; min-height: 4px;" data-block-id="ecd27471178395a097ee53ae984cabbd">
+    <div class="sl-block-content" style="z-index: 13;">
+        <img data-natural-width="313" data-natural-height="416" style="" data-lazy-loaded="" data-src="wtmasturias/155a72bdd0477d54d09d9acbf0918e2b.png">
+    </div>
+</div>
+<div class="sl-block" data-block-type="image" style="width: 152px; height: 49px; left: 85px; top: 295px; min-width: 4px; min-height: 4px;" data-block-id="49fd2f8159dcae9ede75175269efc1e7">
+    <div class="sl-block-content" style="z-index: 14;">
+        <img style="" data-natural-width="835" data-natural-height="271" data-lazy-loaded="" data-src="wtmasturias/cb98b3c876b3c676cefb46777514039c.png">
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 869px; left: 79px; top: 120px;" data-block-id="85e711a475f68c7057477fef44fed519">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; text-align: center; color: rgb(255, 255, 255);">
+<h3><span style="font-size:0.7em"><span style="color:#FFFFFF"><span style="text-align:start">Any names you put on layers / groups will be added in to the </span><span class="small-caps" style="text-align:start">SVG</span><span style="text-align:start"> as an ID on that element</span></span></span></h3>
+</div>
+</div>
+<div class="sl-block" data-block-type="image" style="width: 66px; height: 66px; left: 85px; top: 222px; min-width: 4px; min-height: 4px;" data-block-id="d0715c4d52207edc07cd2417d04b4f35">
+    <div class="sl-block-content" style="z-index: 17;">
+        <img data-natural-width="514" data-natural-height="514" style="" data-lazy-loaded="" data-src="wtmasturias/0526abe2ce45af638be49408265402e6.svg">
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="width: 868px; left: 80px; top: 45px; height: auto;" data-block-id="a633de8b22da0bb4d358033017ed5df1">
+    <div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 12;">
+<h3><span style="font-size:1.4em"><strong><span class="primary">Organize </span>Vectors </strong></span></h3>
+</div>
+</div>
+<div class="sl-block" data-block-type="shape" data-block-id="4550fb7da0e9d8b6033f2f23a48a6c4d" style="min-width: 4px; min-height: 4px; width: 62px; height: 62px; left: 533px; top: 365px;">
+    <div class="sl-block-content fragment" data-shape-type="arrow-right" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 18;" data-fragment-index="0">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 62 62"><polygon points="0,18.599999999999998 31,18.599999999999998 31,0 62,31 31,62 31,43.4 0,43.4" class="shape-element" fill="rgb(255, 255, 255)"></polygon></svg>
+    </div>
+</div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 869px; height: 360px; left: 79px; top: 216px;" data-block-id="c489365e9b79a8e510bdcf4e6642b3a6"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(96, 96, 96)" data-shape-stretch="true" style="z-index: 11;" data-shape-stroke-color="" data-shape-stroke-width="1"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 869 360"><defs><clippath id="shape-mask-1-1526236277472"><rect width="869" height="360"></rect></clippath></defs><rect width="869" height="360" clip-path="url(#shape-mask-1-1526236277472)" class="shape-element" fill="rgb(96, 96, 96)" stroke-width="2"></rect></svg></div></div></section><section data-id="907a58262b454249e5a010f91330ba23"><div class="sl-block" data-block-type="text" style="width: 869px; left: 79px; top: 45px; height: auto;" data-block-id="c7ee8a18cf8a83f8d24814ddf2e6f1bf">
+    <div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 13;">
+<h3><span style="font-size:1.4em"><strong>Set up <span class="primary">Export</span> </strong></span></h3>
+</div>
+</div>
+<div class="sl-block" data-block-type="image" data-block-id="c8b611800a38ad44a22226f1b41dce49" style="min-width: 4px; min-height: 4px; width: 255px; height: 337px; left: 189px; top: 222px;">
+    <div class="sl-block-content" style="z-index: 14;">
+        <img data-natural-width="511" data-natural-height="675" style="" data-lazy-loaded="" data-src="wtmasturias/bc081fb3ab6043d14e1172e158a43949.png">
+    </div>
+</div>
+<div class="sl-block" data-block-type="image" data-block-id="5cfdc1e33e8f65be505464f4ab1e5bed" style="min-width: 4px; min-height: 4px; width: 413px; height: 349px; left: 505px; top: 214px;">
+    <div class="sl-block-content" style="z-index: 15;">
+        <img data-natural-width="393" data-natural-height="332" style="" data-lazy-loaded="" data-src="wtmasturias/2b5eee88ca7588505cbc274f40d10341.png">
+    </div>
+</div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 869px; height: 360px; left: 79px; top: 214px;" data-block-id="f86782c25a0e29351870c217798dc120">
+    <div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(96, 96, 96)" data-shape-stretch="true" style="z-index: 11;" data-shape-stroke-color="" data-shape-stroke-width="1">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 869 360"><defs><clippath id="shape-mask-2-1526236278226"><rect width="869" height="360"></rect></clippath></defs><rect width="869" height="360" clip-path="url(#shape-mask-2-1526236278226)" class="shape-element" fill="rgb(96, 96, 96)" stroke-width="2"></rect></svg>
+    </div>
+</div>
+<div class="sl-block" data-block-type="image" style="width: 66px; height: 66px; left: 85px; top: 222px; min-width: 4px; min-height: 4px;" data-block-id="ccad3b8a4e5dfb86483036a1ab053b4e">
+    <div class="sl-block-content" style="z-index: 12;">
+        <img data-natural-width="514" data-natural-height="514" style="" data-lazy-loaded="" data-src="wtmasturias/0526abe2ce45af638be49408265402e6.svg">
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 869px; left: 78px; top: 109px;" data-block-id="b98a573e6aa34ca131ca95c1ba29efe7">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; text-align: left; color: rgb(255, 255, 255);">
+<ul>
+	<li>
+	<h3><span style="font-size:0.7em">The layers will export in the SVG from the bottom up</span></h3>
+	</li>
+	<li>
+	<h3><span style="font-size:0.7em">"save as" for .ai / “file &gt; export &gt; svg” for the cleaner, web version</span></h3>
+	</li>
+</ul>
+</div>
+</div>
+<div class="sl-block" data-block-type="text" data-block-id="70e0f1f8cf3c8334e0e6f1842ec3a38a" style="height: auto; min-width: 30px; min-height: 30px; width: 343px; left: 575px; top: 543px;">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17; font-size: 50%; text-align: left;">
+        <span>*Text converted to outline will not be accessible</span>
+    </div>
+</div></section><section data-id="565825caa86deb19319a04bd2f3b36bd"><div class="sl-block" data-block-type="text" style="width: 790px; left: 117px; top: 240px; height: auto;" data-block-id="2f348fd2c3febfceea091ab20225cc56">
+    <div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-down">
+<h3><span style="font-size:2.5em"><strong><span class="primary">Optimization</span> </strong></span></h3>
+</div>
+</div></section><section data-id="f42cd803d5d3b8b0822b4a4afc427827"><div class="sl-block" data-block-type="text" style="width: 869px; left: 78px; top: 210px; height: auto;" data-block-id="b634aa0bac5ebda4f45da5da86e558cb">
+    <div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 12;">
+<h3><span style="font-size:2.0em"><strong><span class="primary">Optimize </span>SVG removing anything unnecessary</strong></span></h3>
+</div>
+</div></section><section data-id="c5d3e0a9fce026e0dd33dd21318b251e"><div class="sl-block" data-block-type="text" style="width: 869px; left: 79px; top: 45px; height: auto;" data-block-id="2870f1b78c22d833537e74192138de79">
+    <div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 13;">
+<h3><span style="font-size:1.4em"><strong>Simplify <span class="primary">Anchor Points</span></strong></span></h3>
+</div>
+</div>
+<div class="sl-block" data-block-type="shape" style="width: 869px; height: 432px; left: 79px; top: 144px;" data-block-id="ad032806fb3641fa5b9e8223bdef7573"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(96, 96, 96)" data-shape-stretch="true" style="z-index: 11;" data-shape-stroke-color="" data-shape-stroke-width="1" data-fragment-index="0"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 869 432"><defs><clippath id="shape-mask-3-1523703151313"><rect width="869" height="432"></rect></clippath></defs><rect width="869" height="432" clip-path="url(#shape-mask-3-1523703151313)" class="shape-element" fill="rgb(96, 96, 96)" stroke-width="2"></rect></svg></div></div>
+<div class="sl-block" data-block-type="image" style="width: 66px; height: 66px; left: 84px; top: 150px;" data-block-id="d136dedff44b7a5d3c74c57ae7b843c2">
+    <div class="sl-block-content fragment" style="z-index: 12;" data-fragment-index="0">
+        <img data-natural-width="514" data-natural-height="514" style="" data-lazy-loaded="" data-src="wtmasturias/0526abe2ce45af638be49408265402e6.svg">
+    </div>
+</div>
+<div class="sl-block" data-block-type="image" data-block-id="4aaaf7f74170e4508688dbe6d63b0f91" style="min-width: 30px; min-height: 30px; width: 860px; height: 261px; left: 84px; top: 315px;"><div class="sl-block-content fragment" style="z-index: 14;" data-fragment-index="1"><img style="" data-natural-width="1238" data-natural-height="375" data-lazy-loaded="" data-src="wtmasturias/b7c59a624de96e501c4858767e2a7bfc.png"></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="262ecf513283028bff04d46aabb77660" style="min-width: 30px; min-height: 30px; width: 507px; height: 161px; left: 259px; top: 168px;"><div class="sl-block-content fragment" style="z-index: 15;" data-fragment-index="0"><img style="" data-natural-width="831" data-natural-height="264" data-lazy-loaded="" data-src="wtmasturias/e149d34e2c543fe80ff56ce78286b3d8.png"></div></div></section><section data-id="3f945ea3be6f3116c3031f0ccfd8028a"><div class="sl-block" data-block-type="text" style="width: 869px; left: 79px; top: 45px; height: auto;" data-block-id="a7b73af87fed523494fcab0da7e47548">
+    <div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 12;">
+<h3><span style="font-size:1.4em"><strong><span class="primary">Minify </span>Code</strong></span></h3>
+</div>
+</div>
+<div class="sl-block" data-block-type="shape" style="width: 869px; height: 432px; left: 79px; top: 144px;" data-block-id="7bf6a986351e908504a3566f0a376a1e"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgb(96, 96, 96)" data-shape-stretch="true" style="z-index: 10;" data-shape-stroke-color="" data-shape-stroke-width="1" data-fragment-index="0"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 869 432"><defs><clippath id="shape-mask-4-1523703202439"><rect width="869" height="432"></rect></clippath></defs><rect width="869" height="432" clip-path="url(#shape-mask-4-1523703202439)" class="shape-element" fill="rgb(96, 96, 96)" stroke-width="2"></rect></svg></div></div>
+<div class="sl-block" data-block-type="image" style="width: 66px; height: 66px; left: 84px; top: 150px;" data-block-id="ea86b3d2e69358d7de986b6fac93b243">
+    <div class="sl-block-content fragment" style="z-index: 11;" data-fragment-index="0">
+        <img data-natural-width="514" data-natural-height="514" style="" data-lazy-loaded="" data-src="wtmasturias/0526abe2ce45af638be49408265402e6.svg">
+    </div>
+</div>
+<div class="sl-block" data-block-type="image" data-block-id="06ee25fddfd9c1f6fd3d66f46954ea70" style="min-width: 30px; min-height: 30px; width: 407px; height: 337px; left: 310px; top: 192px;"><div class="sl-block-content fragment" style="z-index: 13;" data-fragment-index="1"><img style="" data-natural-width="386" data-natural-height="320" data-lazy-loaded="" data-src="wtmasturias/61d3297dd5bced8d63add71bcf7ba9b4.png"></div></div></section><section data-id="670faed8fa44f32c5987857260a99609">
+
+
+<div class="sl-block" data-block-type="image" style="width: 144px; height: 144px; left: 222px; top: 176px;" data-block-id="0a7090b8bcc687be00af07ad001b87eb">
+    <div class="sl-block-content fragment" style="z-index: 11;" data-fragment-index="0">
+        <img data-natural-width="514" data-natural-height="514" style="" data-lazy-loaded="" data-src="wtmasturias/0526abe2ce45af638be49408265402e6.svg">
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="width: 869px; left: 79px; top: 45px; height: auto;" data-block-id="8cfe587ce120b801f40af5f96e76331f">
+    <div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 12;">
+<h3><span style="font-size:1.4em"><strong><span class="primary">Optimizing </span>Plugins</strong></span></h3>
+</div>
+</div>
+<div class="sl-block" data-block-type="text" style="width: 158px; left: 215px; top: 320px; height: auto;" data-block-id="2ab06832b28e75689bf40d7725b64745">
+    <div class="sl-block-content fragment" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 13;" data-fragment-index="0">
+        <h3>Illustrator</h3>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="width: 158px; left: 634px; top: 320px; height: auto;" data-block-id="f17b5ab21c5163c9e70258b13a2b3cea">
+    <div class="sl-block-content fragment" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 14;" data-fragment-index="1">
+        <h3>Sketch</h3>
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 144px; height: 130px; left: 640px; top: 176px;" data-block-id="1cda70dad4ace53d2d44be5286ca5115"><div class="sl-block-content fragment" style="z-index: 15;" data-fragment-index="1"><img data-natural-width="494" data-natural-height="447" style="" data-lazy-loaded="" data-src="wtmasturias/087095d8725116f583579c1b5a8fdef9.svg"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 113px; height: 97px; left: 159px; top: 144px;" data-block-id="c9b1bd9d129b72c9d8cac1e02fc5a256">
+    <div class="sl-block-content fragment" style="z-index: 17;" data-fragment-index="0">
+        <img data-natural-width="400" data-natural-height="344" style="" data-lazy-loaded="" data-src="wtmasturias/343160dcf29df9c9e9a9528dead72455.png">
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 312px; left: 138px; top: 363px;" data-block-id="398fb290617de6fb4bbcc559e514a90a"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16;" data-fragment-index="0">
+<p style="font-size:inherit"><span style="font-size:0.7em">https://github.com/davidderaedt/SVG-NOW</span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="cca9f83d52894a2d1e47a9287787fa4f" style="height: auto; min-width: 30px; min-height: 30px; width: 348px; left: 539px; top: 363px;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 18; text-align: center;" data-fragment-index="1">
+<p><span style="font-size:0.7em"><span style="color:rgb(255, 255, 255)">https://github.com/BohemianCoding/svgo-compressor</span></span></p>
+</div></div></section><section data-id="559b10d1065ad99327fcc8b525b4e45b"><div class="sl-block" data-block-type="text" style="height: auto; width: 316px; left: 79px; top: 383px;" data-block-id="c4cbcb42245d26a1e46df0d1658010d3"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;" data-fragment-index="0">
+<p style="font-size:inherit"><span style="font-size:0.9em">SVGOMG</span></p>
+
+<p style="font-size:inherit"><span style="font-size:0.7em"><span style="text-align:start">Nodejs-based tool for optimizing SVG vector graphics files</span></span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 869px; left: 79px; top: 45px; height: auto;" data-block-id="47954fe656a0e99c8698209463fdcd48">
+    <div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;">
+<h3><span style="font-size:1.4em"><strong><span class="primary">Optimizate </span>Tools</strong></span></h3>
+</div>
+</div>
+<div class="sl-block" data-block-type="image" style="width: 157px; height: 157px; left: 159px; top: 203px;" data-block-id="b1240f071dfd5610e114e1a089ba5c55"><div class="sl-block-content fragment" style="z-index: 12;" data-fragment-index="0"><img data-natural-width="512" data-natural-height="512" style="" data-lazy-loaded="" data-src="wtmasturias/6f7f6ef363f7aa3184c4b39b1c04b547.svg"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 412px; left: 540px; top: 469px;" data-block-id="f88d19664b1bf14758dd37d40d7eb749"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; text-align: right;" data-fragment-index="1">
+<p><span style="font-size:0.7em"><span style="color:rgb(255, 255, 255)">https://jakearchibald.github.io/svgomg/</span></span></p>
+</div></div>
+<div class="sl-block" data-block-type="image" style="width: 518px; height: 288px; left: 434px; top: 144px;" data-block-id="c59d1d84bc223c434abe8becac632908"><div class="sl-block-content fragment" style="z-index: 14;" data-fragment-index="1"><img style="" data-natural-width="1437" data-natural-height="799" data-lazy-loaded="" data-src="wtmasturias/33d63770c02337473bcd7c6c03314379.png"></div></div>
+<div class="sl-block" data-block-type="image" style="width: 251px; height: 59px; left: 701px; top: 403px;" data-block-id="d1f660700ede078095f4bfb0e9c96b0d"><div class="sl-block-content fragment" style="z-index: 15;" data-fragment-index="1"><img style="" data-natural-width="294" data-natural-height="69" data-lazy-loaded="" data-src="wtmasturias/892a34264f0760ef108641c10bfbe399.png"></div></div></section></section><section class="stack" data-id="a1b7fb9d6535a3e3f73bfb8fcea6392a"><section data-id="1b1706e807168c2d6c1482e6a4284ba7"><div class="sl-block" data-block-type="text" style="width: 869px; left: 78px; top: 240px; height: auto;" data-block-id="6035c87b38d4ad8dfb77e327c066b86f">
+    <div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-down">
+<h3><span style="font-size:2.5em"><strong><span class="primary"><span style="color:#FFFFFF">HTML</span> Invasion</span></strong></span></h3>
+</div>
+</div></section><section data-id="72a103af5dda4adb443030747fe97e90"><div class="sl-block" data-block-type="text" style="width: 869px; left: 78px; top: 249px; height: auto;" data-block-id="9de2f8501687116e4881fd4e4ba29c5a">
+    <div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h3><strong><span style="font-size:2.0em"><span class="primary">No single </span><span style="color:#FFFFFF"><span style="text-align:start">solution is perfect</span> </span></span></strong></h3>
+</div>
+</div></section><section data-id="c34db351c7a08e7ba50d1a9abd6ef4e6"><div class="sl-block" data-block-type="text" style="width: 869px; left: 78px; top: 45px; height: auto;" data-block-id="6b423dc12fd4f92f9cd43f145f43987d">
+    <div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h3><span style="font-size:1.4em"><strong>Data uri (Embed SVG)</strong></span></h3>
+</div>
+</div>
+
+
+
+
+<div class="sl-block" data-block-type="code" style="width: 712px; height: 216px; left: 237px; top: 144px;" data-block-id="8fd0c51f659649e3a7bcbf9efcd58b81"><div class="sl-block-content notranslate" data-highlight-theme="monokai" style="z-index: 11;"><pre><code>&lt;svg class="alien"&gt;&lt;/svg&gt;
+
+.alien {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/527512/alien.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.alien {
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjUyIiBoZWlnaHQ9IjUyIiB2aWV3Qm94PSItMTAgLTEwIDUyIDUyIj48cGF0aCBkPSJNOS4yNjMgMTMuMjgxYy0uNzIyLS4xOTMtMS40NDQtLjA0OC0xLjk3My4zMzctMS43MzIgMS4yMDMtMS41ODggNC42Mi4yODkgNy45NCAxLjI1MSAyLjE2NSAyLjkzNSAzLjc1MyA0LjQ3NSA0LjA5LjI0MS4wNDguNDMzLjA5Ni42NzQuMDk2LjQ4MSAwIC45NjItLjE0NCAxLjM0Ny0uMzg1IDEuNzMyLTEuMjAzIDEuNTg4LTQuNjItLjI4OS03Ljk0LTEuMjUxLTIuMjE0LTIuOTgzLTMuNzUzLTQuNTIzLTQuMTM4em0zLjk0NiAxMC44NzVjLS4xOTMuMTQ0LS40ODEuMTkyLS44MTguMDk2LTEuMTU1LS4yNDEtMi41NS0xLjU4OC0zLjU2MS0zLjQxNy0xLjQ5Mi0yLjY5NS0xLjYzNi01LjM4OS0uNzIyLTYuMDE1YS44MTQuODE0IDAgMCAxIC40ODEtLjE0NGMuMDk2IDAgLjE5MyAwIC4zMzcuMDQ4IDEuMTU1LjI0MSAyLjU1IDEuNTg4IDMuNTYxIDMuNDE3IDEuNTQgMi42NDcgMS42MzYgNS4zNDEuNzIyIDYuMDE1ek0yNC43MSAxMy42MThjLS41MjktLjM4NS0xLjI1MS0uNDgxLTEuOTczLS4zMzctMS41NC4zMzctMy4yNzIgMS45MjUtNC40NzUgNC4wOS0xLjg3NyAzLjMyLTEuOTczIDYuNzM3LS4yODkgNy45NC4zODUuMjg5LjgxOC4zODUgMS4zNDcuMzg1LjE5MiAwIC40MzMtLjA0OC42NzQtLjA5NiAxLjU0LS4zMzcgMy4yNzItMS45MjUgNC40NzUtNC4wOSAxLjgyOS0zLjI3MiAxLjk3My02LjY4OS4yNDEtNy44OTJ6bS0xLjU0IDcuMjE4Yy0xLjAxMSAxLjgyOS0yLjQwNiAzLjEyOC0zLjU2MSAzLjQxNy0uMzM3LjA5Ni0uNjI2LjA0OC0uODE4LS4wOTYtLjkxNC0uNjI2LS44MTgtMy4zNjguNzIyLTYuMDE1IDEuMDExLTEuODI5IDIuNDA2LTMuMTI4IDMuNTYxLTMuNDE3LjA5Ni0uMDQ4LjI0MS0uMDQ4LjMzNy0uMDQ4LjE5MiAwIC4zMzcuMDQ4LjQ4MS4xNDQuOTE0LjYyNi43NyAzLjMyLS43MjIgNi4wMTV6TTE2IDBDOC44NzggMCAzLjA1NiA1LjgyMyAzLjA1NiAxMi45NDQgMy4wNTYgMjQuMTA4IDEyLjg3MyAzMiAxNiAzMnMxMi45NDQtNy45NCAxMi45NDQtMTkuMDU2QzI4Ljk0NCA1LjgyMiAyMy4xMjEgMCAxNiAwem0wIDMwLjYwNWMtMi4yMTQgMC0xMS41MDEtNy4wMjYtMTEuNTAxLTE3LjYxMkM0LjQ5OSA2LjY0MSA5LjY0OCAxLjQ5MiAxNiAxLjQ5MnMxMS41MDEgNS4xNDkgMTEuNTAxIDExLjUwMWMwIDEwLjUzOC05LjI4NyAxNy42MTItMTEuNTAxIDE3LjYxMnptMy4wOC0yNi4yMjZjLjA5Ni0uMzg1LjQ4MS0uNjI2Ljg2Ni0uNDgxIDIuNzQzLjc3IDQuOTA4IDIuODg3IDUuNjMgNS42My4wOTYuMzg1LS4wOTYuNzctLjQ4MS44NjYtLjA0OCAwLS4xNDQuMDQ4LS4xOTIuMDQ4LS4zMzcgMC0uNjI2LS4xOTMtLjY3NC0uNTI5LS42MjYtMi4yNjItMi40MDYtMy45OTQtNC42Mi00LjYyLS40MzMtLjE0NC0uNjI2LS41MjktLjUyOS0uOTE0eiIvPjwvc3ZnPg==);
+}</code></pre></div></div>
+
+<div class="sl-block" data-block-type="image" style="width: 144px; height: 144px; left: 86px; top: 180px;" data-block-id="81210885e920a569dc967cc1f12545da">
+    <div class="sl-block-content" style="z-index: 13;" data-inline-svg="false">
+        <img data-natural-width="32" data-natural-height="32" style="" data-lazy-loaded="" data-src="wtmasturias/bc5574e809a04c0b3ac996444a96d6c6.svg">
+    </div>
+</div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 157px; height: 216px; left: 80px; top: 144px;" data-block-id="d7b1ff2a485c0c095047f108c974b0ba"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 157 216"><rect width="157" height="216" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div>
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 290px; left: 150px; top: 429px;" data-block-id="aec9bf45163dc7920b6587ddba83bdf3"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; text-align: left;">
+<ul>
+	<li><span style="font-size:0.7em">Reduced HTTP requests</span></li>
+	<li><span style="font-size:0.7em">Easy to add to markup</span></li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 354px; left: 595px; top: 379px;" data-block-id="7660fcbf6203cc83f973360e19f8bebf"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; text-align: left;">
+<ul>
+	<li>
+	<h3><span style="font-size:0.7em"><span style="color:#FFFFFF">Larger CSS files only c<span style="color:#FFFFFF">hange attributes by duplicating selector</span></span></span></h3>
+	</li>
+	<li>
+	<h3><span style="font-size:0.7em"><span style="color:#FFFFFF">Base64 block Performance</span></span></h3>
+	</li>
+	<li>
+	<h3><span style="font-size:0.7em"><span style="color:#FFFFFF">illegible &amp; unmaintainable CSS</span></span></h3>
+	</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="image" style="width: 72px; height: 72px; left: 516px; top: 432px;" data-block-id="c4b19cb775436ed8e811c2410da53c1b">
+    <div class="sl-block-content" style="z-index: 17;" data-inline-svg="true">
+        <img data-natural-width="32" data-natural-height="32" style="" data-lazy-loaded="" data-src="wtmasturias/bc5574e809a04c0b3ac996444a96d6c6.svg">
+        
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="23px" height="29.1px" viewbox="0 0 23 29.1" style="enable-background:new 0 0 23 29.1;" xml:space="preserve">
+<defs>
+</defs>
+<path style="fill: red;" d="M11.5,0C5.1,0,0,5.1,0,11.5c0,10.6,9.3,17.6,11.5,17.6S23,22,23,11.5C23,5.1,17.9,0,11.5,0z M8.7,22.7
+	c-0.2,0.1-0.5,0.2-0.8,0.1c-1.2-0.2-2.5-1.6-3.6-3.4c-1.5-2.7-1.6-5.4-0.7-6c0.1-0.1,0.3-0.1,0.5-0.1c0.1,0,0.2,0,0.3,0
+	C5.6,13.5,7,14.8,8,16.6C9.5,19.3,9.6,22,8.7,22.7z M18.7,19.3c-1,1.8-2.4,3.1-3.6,3.4c-0.3,0.1-0.6,0-0.8-0.1
+	c-0.9-0.6-0.8-3.4,0.7-6c1-1.8,2.4-3.1,3.6-3.4c0.1,0,0.2,0,0.3,0c0.2,0,0.3,0,0.5,0.1C20.3,14,20.2,16.6,18.7,19.3z"></path>
+</svg>
+
+    </div>
+</div>
+<div class="sl-block" data-block-type="image" style="width: 72px; height: 72px; left: 78px; top: 432px;" data-block-id="57a9b2343fb9c1a2e18238c7f851332d">
+    <div class="sl-block-content" style="z-index: 18;" data-inline-svg="true">
+        <img data-natural-width="32" data-natural-height="32" style="" data-lazy-loaded="" data-src="wtmasturias/bc5574e809a04c0b3ac996444a96d6c6.svg">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="23px" height="29.1px" viewbox="0 0 23 29.1" style="enable-background:new 0 0 23 29.1;" xml:space="preserve">
+            <defs></defs>
+            <path style="fill: green;" d="M11.5,0C5.1,0,0,5.1,0,11.5c0,10.6,9.3,17.6,11.5,17.6S23,22,23,11.5C23,5.1,17.9,0,11.5,0z M8.7,22.7
+	c-0.2,0.1-0.5,0.2-0.8,0.1c-1.2-0.2-2.5-1.6-3.6-3.4c-1.5-2.7-1.6-5.4-0.7-6c0.1-0.1,0.3-0.1,0.5-0.1c0.1,0,0.2,0,0.3,0
+	C5.6,13.5,7,14.8,8,16.6C9.5,19.3,9.6,22,8.7,22.7z M18.7,19.3c-1,1.8-2.4,3.1-3.6,3.4c-0.3,0.1-0.6,0-0.8-0.1
+	c-0.9-0.6-0.8-3.4,0.7-6c1-1.8,2.4-3.1,3.6-3.4c0.1,0,0.2,0,0.3,0c0.2,0,0.3,0,0.5,0.1C20.3,14,20.2,16.6,18.7,19.3z"></path>
+        </svg>
+    </div>
+</div></section><section data-id="0c081b9b0949897a58ec9a47cb83ac47"><div class="sl-block" data-block-type="text" style="width: 869px; left: 78px; top: 45px; height: auto;" data-block-id="3c6746f9c79224cd10d73f8f269b2c36">
+    <div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h3><strong><span style="font-size:1.4em">SVG &lt;use&gt;</span></strong></h3>
+</div>
+</div>
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 395px; left: 133px; top: 390px;" data-block-id="cafa47fc8594222fe865ed6be6f41183"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; text-align: left;">
+<ul>
+	<li><span style="font-size:0.7em">All svg shapes in one central location</span></li>
+	<li><span style="font-size:0.7em">Easy to style</span></li>
+	<li><span style="font-size:0.7em">Access the different parts of the svg and modify attributes</span></li>
+</ul>
+</div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 712px; height: 216px; left: 237px; top: 144px;" data-block-id="be25d343a294a3caf7368d52c5fa70f0"><div class="sl-block-content notranslate" data-highlight-theme="monokai" style="z-index: 13; font-size: 93%;"><pre><code>&lt;svg viewBox="-10 -10 50 50"&gt;
+     &lt;use xlink:href="http://carmenansio.com/wtm2018/sprite.view.svg#ufo"/&gt;
+&lt;/svg&gt;</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 365px; left: 607px; top: 429px;" data-block-id="5428ff4e387ade6c660d651a70f3e745"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; text-align: left;">
+<ul>
+	<li><span style="font-size:0.7em">Requires more markup to display</span></li>
+	<li><span style="font-size:0.7em">Duplicated svg block performance</span></li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="image" style="width: 144px; height: 144px; left: 86px; top: 180px;" data-block-id="3a61553916163571a5434d6b6ce272f0">
+    <div class="sl-block-content" style="z-index: 16;" data-inline-svg="false">
+        <img data-natural-width="32" data-natural-height="32" style="" data-lazy-loaded="" data-src="wtmasturias/bc5574e809a04c0b3ac996444a96d6c6.svg">
+    </div>
+</div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 157px; height: 216px; left: 80px; top: 144px;" data-block-id="d0dc57aa96653cd872e3db7a0289dfd2"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 15;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 157 216"><rect width="157" height="216" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="image" style="width: 72px; height: 72px; left: 528px; top: 431px;" data-block-id="327f29389d0c48c80989b3005473c166">
+    <div class="sl-block-content" style="z-index: 17;" data-inline-svg="true">
+        <img data-natural-width="32" data-natural-height="32" style="" data-lazy-loaded="" data-src="wtmasturias/bc5574e809a04c0b3ac996444a96d6c6.svg">
+        
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="23px" height="29.1px" viewbox="0 0 23 29.1" style="enable-background:new 0 0 23 29.1;" xml:space="preserve">
+<defs>
+</defs>
+<path style="fill: red;" d="M11.5,0C5.1,0,0,5.1,0,11.5c0,10.6,9.3,17.6,11.5,17.6S23,22,23,11.5C23,5.1,17.9,0,11.5,0z M8.7,22.7
+	c-0.2,0.1-0.5,0.2-0.8,0.1c-1.2-0.2-2.5-1.6-3.6-3.4c-1.5-2.7-1.6-5.4-0.7-6c0.1-0.1,0.3-0.1,0.5-0.1c0.1,0,0.2,0,0.3,0
+	C5.6,13.5,7,14.8,8,16.6C9.5,19.3,9.6,22,8.7,22.7z M18.7,19.3c-1,1.8-2.4,3.1-3.6,3.4c-0.3,0.1-0.6,0-0.8-0.1
+	c-0.9-0.6-0.8-3.4,0.7-6c1-1.8,2.4-3.1,3.6-3.4c0.1,0,0.2,0,0.3,0c0.2,0,0.3,0,0.5,0.1C20.3,14,20.2,16.6,18.7,19.3z"></path>
+</svg>
+
+    </div>
+</div>
+<div class="sl-block" data-block-type="image" style="width: 72px; height: 72px; left: 53px; top: 431px;" data-block-id="36089d3e9a2645ea01f5635429d7adab">
+    <div class="sl-block-content" style="z-index: 18;" data-inline-svg="true">
+        <img data-natural-width="32" data-natural-height="32" style="" data-lazy-loaded="" data-src="wtmasturias/bc5574e809a04c0b3ac996444a96d6c6.svg">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="23px" height="29.1px" viewbox="0 0 23 29.1" style="enable-background:new 0 0 23 29.1;" xml:space="preserve">
+            <defs></defs>
+            <path style="fill: green;" d="M11.5,0C5.1,0,0,5.1,0,11.5c0,10.6,9.3,17.6,11.5,17.6S23,22,23,11.5C23,5.1,17.9,0,11.5,0z M8.7,22.7
+	c-0.2,0.1-0.5,0.2-0.8,0.1c-1.2-0.2-2.5-1.6-3.6-3.4c-1.5-2.7-1.6-5.4-0.7-6c0.1-0.1,0.3-0.1,0.5-0.1c0.1,0,0.2,0,0.3,0
+	C5.6,13.5,7,14.8,8,16.6C9.5,19.3,9.6,22,8.7,22.7z M18.7,19.3c-1,1.8-2.4,3.1-3.6,3.4c-0.3,0.1-0.6,0-0.8-0.1
+	c-0.9-0.6-0.8-3.4,0.7-6c1-1.8,2.4-3.1,3.6-3.4c0.1,0,0.2,0,0.3,0c0.2,0,0.3,0,0.5,0.1C20.3,14,20.2,16.6,18.7,19.3z"></path>
+        </svg>
+    </div>
+</div></section><section data-id="48ff47cc5f085fa1713c6c3b6355f2e3"><div class="sl-block" data-block-type="text" style="width: 869px; left: 78px; top: 45px; height: auto;" data-block-id="369d3afa1aa95b1c7ed1b8b55fd88705">
+    <div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;">
+        <h3>
+            <span style="font-size:1.4em">
+                <strong>SVG as img src</strong>
+            </span>
+        </h3>
+    </div>
+</div>
+<div class="sl-block" data-block-type="image" style="width: 72px; height: 72px; left: 496px; top: 432px;" data-block-id="56e36c879bdec7eda59551e73709557e">
+    <div class="sl-block-content" style="z-index: 12;" data-inline-svg="true">
+        <img data-natural-width="32" data-natural-height="32" style="" data-lazy-loaded="" data-src="wtmasturias/bc5574e809a04c0b3ac996444a96d6c6.svg">
+        
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="23px" height="29.1px" viewbox="0 0 23 29.1" style="enable-background:new 0 0 23 29.1;" xml:space="preserve">
+<defs>
+</defs>
+<path style="fill: red;" d="M11.5,0C5.1,0,0,5.1,0,11.5c0,10.6,9.3,17.6,11.5,17.6S23,22,23,11.5C23,5.1,17.9,0,11.5,0z M8.7,22.7
+	c-0.2,0.1-0.5,0.2-0.8,0.1c-1.2-0.2-2.5-1.6-3.6-3.4c-1.5-2.7-1.6-5.4-0.7-6c0.1-0.1,0.3-0.1,0.5-0.1c0.1,0,0.2,0,0.3,0
+	C5.6,13.5,7,14.8,8,16.6C9.5,19.3,9.6,22,8.7,22.7z M18.7,19.3c-1,1.8-2.4,3.1-3.6,3.4c-0.3,0.1-0.6,0-0.8-0.1
+	c-0.9-0.6-0.8-3.4,0.7-6c1-1.8,2.4-3.1,3.6-3.4c0.1,0,0.2,0,0.3,0c0.2,0,0.3,0,0.5,0.1C20.3,14,20.2,16.6,18.7,19.3z"></path>
+</svg>
+
+    </div>
+</div>
+<div class="sl-block" data-block-type="image" style="width: 72px; height: 72px; left: 80px; top: 432px;" data-block-id="270c448ce740ce56ffffd8e3741562fb">
+    <div class="sl-block-content" style="z-index: 13;" data-inline-svg="true">
+        <img data-natural-width="32" data-natural-height="32" style="" data-lazy-loaded="" data-src="wtmasturias/bc5574e809a04c0b3ac996444a96d6c6.svg">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="23px" height="29.1px" viewbox="0 0 23 29.1" style="enable-background:new 0 0 23 29.1;" xml:space="preserve">
+            <defs></defs>
+            <path style="fill: green;" d="M11.5,0C5.1,0,0,5.1,0,11.5c0,10.6,9.3,17.6,11.5,17.6S23,22,23,11.5C23,5.1,17.9,0,11.5,0z M8.7,22.7
+	c-0.2,0.1-0.5,0.2-0.8,0.1c-1.2-0.2-2.5-1.6-3.6-3.4c-1.5-2.7-1.6-5.4-0.7-6c0.1-0.1,0.3-0.1,0.5-0.1c0.1,0,0.2,0,0.3,0
+	C5.6,13.5,7,14.8,8,16.6C9.5,19.3,9.6,22,8.7,22.7z M18.7,19.3c-1,1.8-2.4,3.1-3.6,3.4c-0.3,0.1-0.6,0-0.8-0.1
+	c-0.9-0.6-0.8-3.4,0.7-6c1-1.8,2.4-3.1,3.6-3.4c0.1,0,0.2,0,0.3,0c0.2,0,0.3,0,0.5,0.1C20.3,14,20.2,16.6,18.7,19.3z"></path>
+        </svg>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 316px; left: 159px; top: 429px;" data-block-id="9392d5a1dd3584ae63108aa97ad7a4f5">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; text-align: left;">
+<ul>
+	<li><span style="font-size:0.7em">Easy to include</span></li>
+	<li><span style="font-size:0.7em">Can be resized easily</span></li>
+</ul>
+</div>
+</div>
+<div class="sl-block" data-block-type="image" style="width: 144px; height: 144px; left: 86px; top: 180px;" data-block-id="8bc87a8c6b730e8754d8c5c2f750ef2f">
+    <div class="sl-block-content" style="z-index: 15;" data-inline-svg="false">
+        <img data-natural-width="32" data-natural-height="32" style="" data-lazy-loaded="" data-src="wtmasturias/bc5574e809a04c0b3ac996444a96d6c6.svg">
+    </div>
+</div>
+<div class="sl-block" data-block-type="code" style="width: 712px; height: 216px; left: 237px; top: 144px;" data-block-id="8b70686a347512ffa6b8b448ce9e49d5">
+    <div class="sl-block-content notranslate" data-highlight-theme="monokai" style="z-index: 16;">
+        <pre><code>&lt;img class="alien" src="http://carmenansio.com/wtm2018/sprite.view.svg#alien" alt="icono de alien" role="img"&gt;</code></pre>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 374px; left: 575px; top: 429px;" data-block-id="c16206b3f18bba02d349d83ed36be7a1">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17; text-align: left;">
+<ul>
+	<li><span style="font-size:0.7em">Each &lt;img&gt; adds an HTTP request</span></li>
+	<li><span style="font-size:0.7em">Can’t modify styles</span></li>
+</ul>
+</div>
+</div>
+<div class="sl-block" data-block-type="shape" data-block-id="febad4aff5dd07fd97c9846eca77326b" style="min-width: 4px; min-height: 4px; width: 157px; height: 216px; left: 80px; top: 144px;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 10;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 157 216"><rect width="157" height="216" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div></section><section data-id="a2b64499530553fc68a82a654015bda5"><div class="sl-block" data-block-type="text" style="width: 869px; left: 78px; top: 45px; height: auto;" data-block-id="0cffeb92774a691624b5ccb5356f8ab6">
+    <div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h3><span style="font-size:1.4em"><strong>SVG via object</strong></span></h3>
+</div>
+</div>
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 361px; left: 237px; top: 398px;" data-block-id="d48f5ddcad50c19dc69fed0a48ddc0b4"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; text-align: left;">
+<ul>
+	<li style="color:rgb(255, 255, 255)">
+	<h3 style="font-size:inherit"><span style="font-size:0.7em">Browser cache</span></h3>
+	</li>
+	<li style="color:rgb(255, 255, 255)">
+	<h3><span style="font-size:0.7em">DOM, CSS &amp; JS access</span></h3>
+	</li>
+	<li style="color:rgb(255, 255, 255)">
+	<h3><span style="font-size:0.7em">img Fallback</span></h3>
+	</li>
+</ul>
+</div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 712px; height: 216px; left: 237px; top: 144px;" data-block-id="97ad5a6172e0de29a5ee05d6ed8fdff5"><div class="sl-block-content notranslate" data-highlight-theme="monokai" style="z-index: 13;"><pre><code>&lt;object data="alien.svg" type="image/svg+xml"&gt;
+  &lt;img src="alien.png" alt="alien icon"&gt;
+&lt;/object&gt;</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 317px; left: 672px; top: 445px;" data-block-id="d5865a9437c94142457abcadd9416161"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; text-align: left;">
+<ul>
+	<li style="color:rgb(255, 255, 255)">
+	<h3 style="font-size:inherit"><span style="font-size:0.7em">Accessibility</span></h3>
+	</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="image" style="width: 144px; height: 144px; left: 86px; top: 180px;" data-block-id="9ff0032528e394c889d386e692de73ad">
+    <div class="sl-block-content" style="z-index: 16;" data-inline-svg="false">
+        <img data-natural-width="32" data-natural-height="32" style="" data-lazy-loaded="" data-src="wtmasturias/bc5574e809a04c0b3ac996444a96d6c6.svg">
+    </div>
+</div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 157px; height: 216px; left: 80px; top: 144px;" data-block-id="d1a7f3a4f2dc5109ae18520427ab7a90"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 15;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 157 216"><rect width="157" height="216" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="image" style="width: 72px; height: 72px; left: 600px; top: 432px;" data-block-id="46dffc63e1610b0ce7d56e0acc94fb24">
+    <div class="sl-block-content" style="z-index: 17;" data-inline-svg="true">
+        <img data-natural-width="32" data-natural-height="32" style="" data-lazy-loaded="" data-src="wtmasturias/bc5574e809a04c0b3ac996444a96d6c6.svg">
+        
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="23px" height="29.1px" viewbox="0 0 23 29.1" style="enable-background:new 0 0 23 29.1;" xml:space="preserve">
+<defs>
+</defs>
+<path style="fill: red;" d="M11.5,0C5.1,0,0,5.1,0,11.5c0,10.6,9.3,17.6,11.5,17.6S23,22,23,11.5C23,5.1,17.9,0,11.5,0z M8.7,22.7
+	c-0.2,0.1-0.5,0.2-0.8,0.1c-1.2-0.2-2.5-1.6-3.6-3.4c-1.5-2.7-1.6-5.4-0.7-6c0.1-0.1,0.3-0.1,0.5-0.1c0.1,0,0.2,0,0.3,0
+	C5.6,13.5,7,14.8,8,16.6C9.5,19.3,9.6,22,8.7,22.7z M18.7,19.3c-1,1.8-2.4,3.1-3.6,3.4c-0.3,0.1-0.6,0-0.8-0.1
+	c-0.9-0.6-0.8-3.4,0.7-6c1-1.8,2.4-3.1,3.6-3.4c0.1,0,0.2,0,0.3,0c0.2,0,0.3,0,0.5,0.1C20.3,14,20.2,16.6,18.7,19.3z"></path>
+</svg>
+
+    </div>
+</div>
+<div class="sl-block" data-block-type="image" style="width: 72px; height: 72px; left: 158px; top: 432px;" data-block-id="70c4ec4e45b3134f537eb6a41fad9aab">
+    <div class="sl-block-content" style="z-index: 18;" data-inline-svg="true">
+        <img data-natural-width="32" data-natural-height="32" style="" data-lazy-loaded="" data-src="wtmasturias/bc5574e809a04c0b3ac996444a96d6c6.svg">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="23px" height="29.1px" viewbox="0 0 23 29.1" style="enable-background:new 0 0 23 29.1;" xml:space="preserve">
+            <defs></defs>
+            <path style="fill: green;" d="M11.5,0C5.1,0,0,5.1,0,11.5c0,10.6,9.3,17.6,11.5,17.6S23,22,23,11.5C23,5.1,17.9,0,11.5,0z M8.7,22.7
+	c-0.2,0.1-0.5,0.2-0.8,0.1c-1.2-0.2-2.5-1.6-3.6-3.4c-1.5-2.7-1.6-5.4-0.7-6c0.1-0.1,0.3-0.1,0.5-0.1c0.1,0,0.2,0,0.3,0
+	C5.6,13.5,7,14.8,8,16.6C9.5,19.3,9.6,22,8.7,22.7z M18.7,19.3c-1,1.8-2.4,3.1-3.6,3.4c-0.3,0.1-0.6,0-0.8-0.1
+	c-0.9-0.6-0.8-3.4,0.7-6c1-1.8,2.4-3.1,3.6-3.4c0.1,0,0.2,0,0.3,0c0.2,0,0.3,0,0.5,0.1C20.3,14,20.2,16.6,18.7,19.3z"></path>
+        </svg>
+    </div>
+</div></section><section data-id="efae7869204bc3e450667e165ae299a2"><div class="sl-block" data-block-type="text" style="width: 869px; left: 78px; top: 45px; height: auto;" data-block-id="ee59a8c2b4fe794dae802b1a55a5b396">
+    <div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;" dir="ui">
+<h3><strong><span style="font-size:1.4em">inline SVG</span></strong></h3>
+</div>
+</div>
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 316px; left: 158px; top: 429px;" data-block-id="812dcf267efa6d9eb555d5dd3b51b2af"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; text-align: left;">
+<ul>
+	<li style="color:rgb(255, 255, 255)">
+	<h3 style="font-size:inherit"><span style="font-size:0.7em">DOM, CSS &amp; JS access</span></h3>
+	</li>
+	<li style="color:rgb(255, 255, 255)"><span style="font-size:21px">Animation</span></li>
+</ul>
+</div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 712px; height: 216px; left: 237px; top: 144px;" data-block-id="dba1e5f331aee20831153139f287fcb1"><div class="sl-block-content notranslate" data-highlight-theme="monokai" style="z-index: 13; font-size: 92%;"><pre><code>&lt;svg viewBox="0 0 52 52" id="alien" xmlns="http://www.w3.org/2000/svg"&gt;
+    &lt;path d="M9.263 13.281c-.722-.193-1.444-.048-1.973.337-1.732 
+1.203-1.588 4.62.289 7.94 1.251 2.165 2.935 3.753 4.475 
+4.09.241.048.433.096.674.096.481 0 .962-.144 1.347-.385 
+1.732-1.203 1.588-4.62-.289-7.94-1.251-2.214-2.983-3.753-4.523-4.138zm3.946 
+10.875c-.193.144-.481.192-.818.096-1.155-.241-2.55-1.588-3.561-3.417-1.492-2.695-1.636-5.389-.722-6.015a.814.814
+ 0 0 1 .481-.144c.096 0 .193 0 .337.048 1.155.241 2.55 1.588 3.561 
+3.417 1.54 2.647 1.636 5.341.722 6.015zM24.71 13.618c-.529-.385-1.251-.481-1.973-.337-1.54.337-3.272 1.925-4.475 4.09-1.877 3.32-1.973 6.737-.289 7.94.385.289.818.385 1.347.385.192 0 .433-.048.674-.096 
+1.54-.337 3.272-1.925 4.475-4.09 1.829-3.272 1.973-6.689.241-7.892zm-1.54 
+7.218c-1.011 1.829-2.406 3.128-3.561 3.417-.337.096-.626.048-.818-.096-.914-.626-.818-3.368.722-6.015 1.011-1.829 2.406-3.128 3.561-3.417.096-.048.241-.048.337-.048.192 0 .337.048.481.144.914.626.77 
+3.32-.722 6.015zM16 0C8.878 0 3.056 5.823 3.056 12.944 3.056 24.108 12.873 
+32 16 32s12.944-7.94 12.944-19.056C28.944 5.822 23.121 0 16 0zm0 30.605c-2.214 
+0-11.501-7.026-11.501-17.612C4.499 6.641 9.648 1.492 16 1.492s11.501 
+5.149 11.501 11.501c0 10.538-9.287 17.612-11.501 17.612zm3.08-26.226c.096-.385.481-.626.866-.481 2.743.77 4.908 2.887 5.63 5.63.096.385-.096.77-.481.866-.048 0-.144.048-.192.048-.337 
+0-.626-.193-.674-.529-.626-2.262-2.406-3.994-4.62-4.62-.433-.144-.626-.529-.529-.914z"/&gt;
+&lt;/svg&gt;
+  </code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 331px; left: 632px; top: 445px;" data-block-id="f382e08c53d20880dd8bfa134a8520fe"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; text-align: left;">
+<ul>
+	<li style="color:rgb(255, 255, 255)">
+	<h3 style="font-size:inherit"><a href="https://css-tricks.com/probably-dont-base64-svg/" style="font-size: 0.7em; background-color: initial;" target="_blank"><span style="color:#FFFFFF">Bad for Performance</span></a></h3>
+	</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="image" style="width: 144px; height: 144px; left: 86px; top: 180px;" data-block-id="d3ac56bcbc042c969c0002411bbf2f61">
+    <div class="sl-block-content" style="z-index: 16;" data-inline-svg="false">
+        <img data-natural-width="32" data-natural-height="32" style="" data-lazy-loaded="" data-src="wtmasturias/bc5574e809a04c0b3ac996444a96d6c6.svg">
+    </div>
+</div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 157px; height: 216px; left: 80px; top: 144px;" data-block-id="3dfe4deabce6d4ec7ffbc3bd7ca43134"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 15;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 157 216"><rect width="157" height="216" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="image" style="width: 72px; height: 72px; left: 553px; top: 432px;" data-block-id="a1e131f1dc58baac751786b8ba01078c">
+    <div class="sl-block-content" style="z-index: 17;" data-inline-svg="true">
+        <img data-natural-width="32" data-natural-height="32" style="" data-lazy-loaded="" data-src="wtmasturias/bc5574e809a04c0b3ac996444a96d6c6.svg">
+        
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="23px" height="29.1px" viewbox="0 0 23 29.1" style="enable-background:new 0 0 23 29.1;" xml:space="preserve">
+<defs>
+</defs>
+<path style="fill: red;" d="M11.5,0C5.1,0,0,5.1,0,11.5c0,10.6,9.3,17.6,11.5,17.6S23,22,23,11.5C23,5.1,17.9,0,11.5,0z M8.7,22.7
+	c-0.2,0.1-0.5,0.2-0.8,0.1c-1.2-0.2-2.5-1.6-3.6-3.4c-1.5-2.7-1.6-5.4-0.7-6c0.1-0.1,0.3-0.1,0.5-0.1c0.1,0,0.2,0,0.3,0
+	C5.6,13.5,7,14.8,8,16.6C9.5,19.3,9.6,22,8.7,22.7z M18.7,19.3c-1,1.8-2.4,3.1-3.6,3.4c-0.3,0.1-0.6,0-0.8-0.1
+	c-0.9-0.6-0.8-3.4,0.7-6c1-1.8,2.4-3.1,3.6-3.4c0.1,0,0.2,0,0.3,0c0.2,0,0.3,0,0.5,0.1C20.3,14,20.2,16.6,18.7,19.3z"></path>
+</svg>
+
+    </div>
+</div>
+<div class="sl-block" data-block-type="image" style="width: 72px; height: 72px; left: 80px; top: 432px;" data-block-id="2a98288be8f18b8e69652043cb143b4d">
+    <div class="sl-block-content" style="z-index: 18;" data-inline-svg="true">
+        <img data-natural-width="32" data-natural-height="32" style="" data-lazy-loaded="" data-src="wtmasturias/bc5574e809a04c0b3ac996444a96d6c6.svg">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="23px" height="29.1px" viewbox="0 0 23 29.1" style="enable-background:new 0 0 23 29.1;" xml:space="preserve">
+            <defs></defs>
+            <path style="fill: green;" d="M11.5,0C5.1,0,0,5.1,0,11.5c0,10.6,9.3,17.6,11.5,17.6S23,22,23,11.5C23,5.1,17.9,0,11.5,0z M8.7,22.7
+	c-0.2,0.1-0.5,0.2-0.8,0.1c-1.2-0.2-2.5-1.6-3.6-3.4c-1.5-2.7-1.6-5.4-0.7-6c0.1-0.1,0.3-0.1,0.5-0.1c0.1,0,0.2,0,0.3,0
+	C5.6,13.5,7,14.8,8,16.6C9.5,19.3,9.6,22,8.7,22.7z M18.7,19.3c-1,1.8-2.4,3.1-3.6,3.4c-0.3,0.1-0.6,0-0.8-0.1
+	c-0.9-0.6-0.8-3.4,0.7-6c1-1.8,2.4-3.1,3.6-3.4c0.1,0,0.2,0,0.3,0c0.2,0,0.3,0,0.5,0.1C20.3,14,20.2,16.6,18.7,19.3z"></path>
+        </svg>
+    </div>
+</div></section></section><section class="stack" data-id="35cda0266f29f3d6906b0978c052246a"><section data-id="4b8da7391617e30afeac6381ad4ae5c5"><div class="sl-block" data-block-type="text" style="width: 650px; left: 187px; top: 240px; height: auto;" data-block-id="3e0c6a0f6630e730a1300813af14b0e9">
+    <div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-down">
+<h3><span style="font-size:2.5em"><strong><span class="primary">Accesible</span> Content </strong></span></h3>
+</div>
+</div></section><section data-id="1886ce16fe1eebe086414ee37113af32">
+<div class="sl-block" data-block-type="text" style="height: auto; width: 870px; left: 78px; top: 144px;" data-block-id="fd74ed9692f9c55a3ea97be0ce3e389b">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;" dir="ui">
+<ul>
+	<li class="fragment" data-fragment-index="0">
+	<h3><span style="font-size:1.0em"><span class="primary"><strong>Provide title and description:</strong>  <span style="text-align:start"> <span style="color:#FFFFFF">The SVG</span> </span> </span> <a href="http://www.w3.org/TR/SVG11/struct.html#__svg__SVGDocument__title" target="_blank"> <span style="color:#FFFFFF">&lt;title&gt;</span> </a>and &lt;desc&gt; <span style="color:#FFFFFF"> <span style="text-align:start">element provides a human readable name for the SVG content</span> </span> </span></h3>
+	</li>
+	<li class="fragment" data-fragment-index="1">
+<span class="primary"><strong>Clean up content:</strong>  </span> <span>A screen reader may read out the individual letters</span>
+</li>
+	<li class="fragment" data-fragment-index="2">
+	<h3 style="color:rgb(58, 58, 58); text-align:start">
+<span class="primary"><strong>Make it focusable</strong>: </span> <span style="color:#FFFFFF"> <span style="font-size:1.0em"> If your SVG contains content that is interactive, you’ll need to make sure it can take keyboard focus</span> </span>
+</h3>
+	</li>
+	<li class="fragment" data-fragment-index="3"><strong><span class="primary">Semantic roles </span></strong></li>
+</ul>
+</div>
+</div>
+<div class="sl-block" data-block-type="text" style="width: 869px; left: 79px; top: 45px; height: auto;" data-block-id="121d0522e411fa66c76d451841856f54">
+    <div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; text-align: center;">
+        <h3>
+            <span style="font-size:1.4em">
+                <strong>Screen 
+                    
+                    
+                    
+                    <span class="primary">Readers</span>
+                </strong>
+            </span>
+        </h3>
+    </div>
+</div>
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 869px; height: 62px; left: 79px; top: 442px;" data-block-id="a58ae62d9e7a70b144d08d3c7d40c9f8">
+    <div class="sl-block-content fragment notranslate" data-highlight-theme="monokai" style="z-index: 13;" data-fragment-index="3">
+        <pre class="stylus"><code>&lt;g id="svg-list" role="list" aria-label="svg graph" transform="translate(0,58)"&gt;
+// &lt;g id="bars" role="list"&gt;/ &lt;g id="bars-items" role="listitems"&gt;  
+</code></pre>
+    </div>
+</div></section></section><section class="stack" data-id="b20c42e7bf378fa7aef257daa2ed0c9d"><section data-id="a5ced9c9c9633a1e0dad4bcf708688f5"><div class="sl-block" data-block-type="text" style="width: 869px; left: 78px; top: 240px; height: auto;" data-block-id="f3c3e9386c085d7a2887775515290717">
+    <div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-down">
+<h3><span style="font-size:2.5em"><strong>Galactic Icon <span class="primary">Systems</span></strong></span></h3>
+</div>
+</div></section><section data-id="9676ad6a6aa68ce09bd0f1767a97f976"><div class="sl-block" data-block-type="text" style="width: 869px; left: 78px; top: 72px; height: auto;" data-block-id="ad84e3cd74c6eafc5a355cc28fdf3827">
+    <div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-down">
+<h3><span style="font-size:1.4em"><strong><span class="primary">SVG icons</span> </strong> vs Icon Font</span></h3>
+</div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 870px; left: 77px; top: 216px;" data-block-id="ca609a1944ac11f10b75f0c42e5147c5">
+    <div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" dir="ui" data-fragment-index="0">
+<ul>
+	<li class="">
+	<h3>More control over styles (multi-color icons)</h3>
+	</li>
+	<li class="">
+	<h3>Can be animated &amp; interactive</h3>
+	</li>
+	<li class="">
+	<h3>You can provide PNG fallback for SVG</h3>
+	</li>
+	<li class="">
+	<h3>Consistent across browsers (unlike icon fonts)</h3>
+	</li>
+	<li class="">
+	<h3>Are easier to create, embed, and maintain</h3>
+	</li>
+</ul>
+</div>
+</div></section><section data-id="682ac703cfa5df2bb00d4bb4746bd4e2"><div class="sl-block" data-block-type="text" style="width: 790px; left: 117px; top: 45px; height: auto;" data-block-id="d02c7986d717b0f5e45feb14c561b2ea">
+    <div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h3><span style="font-size:1.4em"><strong><span class="primary">Generate </span>an icon font</strong></span></h3>
+</div>
+</div>
+<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 790px; height: 195px; left: 117px; top: 165px;" data-block-id="168f350598384e6dd19d577fd72838ca"><div class="sl-block-content fragment" style="z-index: 13;" data-fragment-index="0"><img data-natural-width="1239" data-natural-height="306" style="" data-lazy-loaded="" data-src="wtmasturias/2c9372dd6ec3c9ae7edf967f938f39e5.png"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 790px; height: 195px; left: 117px; top: 381px;" data-block-id="a42924c21725ab06bc1ffcc04af89cd6"><div class="sl-block-content fragment" style="z-index: 14;" data-fragment-index="1"><img data-natural-width="1266" data-natural-height="312" style="" data-lazy-loaded="" data-src="wtmasturias/4c4de96a09894a8b07eaece090d9ba05.png"></div></div></section><section data-id="cec7381c13caec7f52d0221fbe9fd371"><div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 820px; height: 432px; left: 0px; top: 144px;" data-block-id="735dd048980561ed6533a8edc8cc2a94"><div class="sl-block-content fragment" style="z-index: 10;" data-fragment-index="0"><img data-natural-width="1440" data-natural-height="759" style="" data-lazy-loaded="" data-src="wtmasturias/ea201bc49a952c51988988238049a1b3.png"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 484px; height: 353px; left: 540px; top: 144px;" data-block-id="c8eb0bfa4b6372f0ecec43b4b1edef90"><div class="sl-block-content fragment" style="z-index: 12;" data-fragment-index="1"><img data-natural-width="562" data-natural-height="410" style="" data-lazy-loaded="" data-src="wtmasturias/d5dfd92db8e55f93d875c9d110195bdc.png"></div></div>
+<div class="sl-block" data-block-type="text" style="width: 790px; left: 117px; top: 45px; height: auto;" data-block-id="fb53fa1278208a79f68f7e368dc09d2f">
+    <div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 13;">
+<h3><span style="font-size:1.4em"><strong><span class="primary">Render </span>problems</strong></span></h3>
+</div>
+</div></section><section data-id="6cfcafef919ec883f16fbc226eb1b418"><div class="sl-block" data-block-type="text" style="width: 790px; left: 117px; top: 240px; height: auto;" data-block-id="56b43f37bcb93d1465facf63ffab29ed">
+    <div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-down">
+<h3><span style="font-size:2.5em"><strong>Flying with <span class="primary">Sprites</span> </strong></span></h3>
+</div>
+</div></section><section data-id="1b45d054a46879e01df6bb07110938eb">
+<div class="sl-block" data-block-type="text" style="width: 790px; left: 117px; top: 45px; height: auto;" data-block-id="5c073d8bfaa0469d45f9a086065bef74">
+    <div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h3><span style="font-size:1.4em"><strong><span class="primary">inline svg</span></strong></span></h3>
+</div>
+</div>
+
+
+
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 869px; height: 432px; left: 78px; top: 144px;" data-block-id="011d5594ecf0d2b098ec3b1a907339e2"><div class="sl-block-content notranslate" data-highlight-theme="monokai" style="z-index: 14; font-size: 80%;"><pre class="stylus"><code>&lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"&gt;
+  &lt;symbol viewBox="-10 -10 52 52" id="alien" xmlns="http://www.w3.org/2000/svg"&gt;
+    &lt;path d="M9.263 13.281c-.722-.193-1.444-.048-1.973.337-1.732 1.203-1.588 4.62.289 7.94 1.251 2.165 2.935 3.753 4.475 4.09.241.048.433.096.674.096.481 0 .962-.144 1.347-.385 1.732-1.203 1.588-4.62-.289-7.94-1.251-2.214-2.983-3.753-4.523-4.138zm3.946 10.875c-.193.144-.481.192-.818.096-1.155-.241-2.55-1.588-3.561-3.417-1.492-2.695-1.636-5.389-.722-6.015a.814.814 0 0 1 .481-.144c.096 0 .193 0 .337.048 1.155.241 2.55 1.588 3.561 3.417 1.54 2.647 1.636 5.341.722 6.015zM24.71 13.618c-.529-.385-1.251-.481-1.973-.337-1.54.337-3.272 1.925-4.475 4.09-1.877 3.32-1.973 6.737-.289 7.94.385.289.818.385 1.347.385.192 0 .433-.048.674-.096 1.54-.337 3.272-1.925 4.475-4.09 1.829-3.272 1.973-6.689.241-7.892zm-1.54 7.218c-1.011 1.829-2.406 3.128-3.561 3.417-.337.096-.626.048-.818-.096-.914-.626-.818-3.368.722-6.015 1.011-1.829 2.406-3.128 3.561-3.417.096-.048.241-.048.337-.048.192 0 .337.048.481.144.914.626.77 3.32-.722 6.015zM16 0C8.878 0 3.056 5.823 3.056 12.944 3.056 24.108 12.873 32 16 32s12.944-7.94 12.944-19.056C28.944 5.822 23.121 0 16 0zm0 30.605c-2.214 0-11.501-7.026-11.501-17.612C4.499 6.641 9.648 1.492 16 1.492s11.501 5.149 11.501 11.501c0 10.538-9.287 17.612-11.501 17.612zm3.08-26.226c.096-.385.481-.626.866-.481 2.743.77 4.908 2.887 5.63 5.63.096.385-.096.77-.481.866-.048 0-.144.048-.192.048-.337 0-.626-.193-.674-.529-.626-2.262-2.406-3.994-4.62-4.62-.433-.144-.626-.529-.529-.914z"/&gt;
+  &lt;/symbol&gt;
+  &lt;symbol viewBox="-10 -10 52 52" id="antenna" xmlns="http://www.w3.org/2000/svg"&gt;
+    &lt;path d="M23.449 12.511l1.91-6.627c.337.112.674.168 1.067.168.786 0 1.573-.281 2.134-.899A3.018 3.018 0 1 0 24.291.884c-.842.842-1.067 2.134-.674 3.201l-6.627 1.91L11.374.379c-.337-.337-.899-.337-1.179 0-4.943 4.943-5.223 12.862-.786 18.141l-2.696 8.986H3.399a.863.863 0 0 0-.842.842v2.808c0 .449.393.842.842.842h17.58a.863.863 0 0 0 .842-.842v-2.921a.863.863 0 0 0-.842-.842h-3.314l-1.46-4.605c1.067.281 2.19.449 3.314.449 3.426 0 6.852-1.292 9.492-3.932a.814.814 0 0 0 0-1.179l-5.56-5.616zm-2.696-2.696l2.359-2.359-1.067 3.707-1.292-1.348zm4.662-7.751c.281-.281.618-.393.955-.393s.674.112.955.393c.505.505.505 1.404 0 1.91s-1.404.505-1.91 0c-.562-.562-.562-1.404 0-1.91zM21.932 6.22l-2.359 2.359-1.348-1.348 3.707-1.011zm-1.797 24.095H4.128v-1.236h16.007v1.236zm-4.212-2.864H8.341l2.303-7.582c1.123 1.011 2.359 1.741 3.651 2.303l1.629 5.279zm-4.662-9.324c-.112-.112-.225-.281-.337-.393l-.056-.056C6.88 13.297 6.824 6.557 10.7 2.12l16.569 16.569c-4.662 3.988-11.626 3.763-16.007-.562z"/&gt;
+  &lt;/symbol&gt;
+  &lt;symbol viewBox="-10 -10 52 52" id="asteroid" xmlns="http://www.w3.org/2000/svg"&gt;
+    &lt;path d="M13.803 16.318c-.35 0-.701-.088-1.007-.263-.526-.263-.876-.745-1.051-1.27-.35-1.139.307-2.365 1.445-2.715s2.365.307 2.715 1.445c.175.569.088 1.139-.175 1.664s-.745.876-1.27 1.051c-.263.088-.438.088-.657.088zm0-3.022c-.088 0-.175 0-.263.044a.857.857 0 0 0-.569 1.051c.088.219.219.394.394.526s.438.131.657.044c.219-.088.394-.219.526-.394.088-.219.131-.438.044-.657a.842.842 0 0 0-.788-.613zm5.212 2.584c-.219 0-.394-.044-.569-.131-.307-.175-.482-.438-.613-.745-.175-.657.175-1.358.832-1.533s1.358.175 1.533.832c.088.307.044.657-.088.92-.175.307-.438.482-.744.613-.088 0-.219.044-.35.044zm-.044-1.227c0 .044.044.044.088.044s.044-.044.044-.088c0 0 0-.044-.044-.044h-.044s-.044 0-.044.044c0 0-.044.044 0 .044zM8.986 27.441c-3.109 0-5.65-2.54-5.65-5.65s2.54-5.65 5.65-5.65 5.65 2.54 5.65 5.65-2.54 5.65-5.65 5.65zm0-9.985c-2.409 0-4.336 1.927-4.336 4.336s1.927 4.336 4.336 4.336 4.336-1.927 4.336-4.336-1.971-4.336-4.336-4.336zm8.715 6.394c.307-1.314.92-2.452 1.796-3.328l8.89-8.89c.263-.263.263-.657 0-.92s-.657-.263-.92 0l-8.89 8.89c-1.051 1.007-1.752 2.409-2.146 3.942-.876 3.766-4.467 6.263-8.321 5.869-3.504-.394-6.35-3.197-6.744-6.744-.438-3.854 2.102-7.445 5.869-8.321 1.577-.35 2.934-1.095 3.942-2.146l8.89-8.89c.263-.263.263-.657 0-.92s-.657-.263-.92 0l-8.89 8.89c-.876.876-2.015 1.489-3.328 1.796C2.506 14.085-.428 18.29.053 22.8c.438 4.117 3.766 7.445 7.883 7.883.35.044.657.044 1.007.044 4.16 0 7.796-2.803 8.759-6.876zm-1.095-12.569l8.89-8.89c.263-.263.263-.657 0-.92s-.657-.263-.92 0l-8.89 8.89a.635.635 0 0 0 0 .92c.131.131.307.175.482.175s.307-.044.438-.175zm6.307.351l8.89-8.89c.263-.263.263-.657 0-.92s-.657-.263-.92 0l-8.89 8.89a.635.635 0 0 0 0 .92c.131.131.307.175.482.175s.307-.044.438-.175z"/&gt;&lt;/symbol&gt;
+  &lt;symbol viewBox="-10 -10 52 52" id="astronaut" xmlns="http://www.w3.org/2000/svg"&gt;
+    &lt;path d="M16 24.99c6.1 0 11.077-4.12 11.077-9.258 0-.642-.053-1.231-.214-1.873a4.259 4.259 0 0 0-1.712-2.462C22.582 9.631 19.318 8.668 16 8.668s-6.582.963-9.151 2.729a4.254 4.254 0 0 0-1.712 2.462 7.435 7.435 0 0 0-.214 1.873C4.923 20.816 9.9 24.99 16 24.99zM6.689 14.288c.161-.642.535-1.177 1.07-1.498 2.301-1.552 5.244-2.462 8.241-2.462s5.94.856 8.241 2.462c.535.375.91.91 1.07 1.498.107.482.161.963.161 1.498 0 4.227-4.227 7.652-9.472 7.652s-9.472-3.425-9.472-7.652c0-.535.053-1.017.161-1.498zm12.361-1.392a.848.848 0 0 1 1.017-.535c.91.321 1.766.749 2.569 1.231.589.428 1.07 1.017 1.231 1.766.107.428.161.856.161 1.284s-.375.803-.803.803-.803-.321-.803-.803c0-.321-.053-.589-.107-.91-.107-.321-.268-.642-.589-.803a9.981 9.981 0 0 0-2.14-1.07c-.428-.107-.696-.535-.535-.963zm12.147 1.82c0-1.124-.161-2.997-1.124-3.371C28.682 4.87 22.902 0 15.999 0S3.317 4.87 1.925 11.345C.962 11.72.801 13.539.801 14.716c0 1.231.161 3.211 1.284 3.425.268.91.589 1.819 1.017 2.622-.375.856-.589 1.712-.589 2.569 0 4.763 6.047 8.669 13.485 8.669s13.485-3.906 13.485-8.669c0-.856-.214-1.766-.589-2.569a15.66 15.66 0 0 0 1.017-2.622c1.07-.268 1.284-2.247 1.284-3.425zM12.147 2.194v2.408c0 .428.375.803.803.803s.803-.375.803-.803V1.819a6.77 6.77 0 0 1 1.498-.161v4.174c0 .428.375.803.803.803s.803-.375.803-.803V1.604c.482.054.963.107 1.498.161v2.783c0 .428.375.803.803.803s.803-.375.803-.803V2.14c5.137 1.659 8.883 6.475 8.883 12.201 0 7.064-5.726 12.789-12.789 12.789S3.212 21.458 3.212 14.394c0-5.672 3.746-10.542 8.936-12.201zM27.88 23.331c0 3.906-5.351 7.064-11.88 7.064S4.12 27.238 4.12 23.331c0-.268.053-.482.053-.749 2.622 3.746 6.957 6.207 11.826 6.207s9.204-2.462 11.826-6.207c.053.268.053.482.053.749z"/&gt;
+  &lt;/symbol&gt;
+  &lt;symbol viewBox="-10 -10 52 52" id="jupiter" xmlns="http://www.w3.org/2000/svg"&gt;
+    &lt;path d="M31.34 11.437a16.408 16.408 0 0 0-1.765-3.845c0-.063-.063-.126-.126-.189a14.562 14.562 0 0 0-1.954-2.458l-.063-.063a14.876 14.876 0 0 0-3.908-2.962C19.742-.097 15.456-.538 11.359.722S3.921 4.693 1.904 8.475-.554 16.543.706 20.64s3.971 7.438 7.753 9.455c2.332 1.261 4.916 1.891 7.564 1.891 1.576 0 3.089-.252 4.601-.693 4.097-1.261 7.438-3.971 9.455-7.753 2.017-3.719 2.458-8.005 1.261-12.102zM28.441 22.72c-.126.252-.315.504-.441.756H16.024c-.504 0-.945.441-.945.945s.441.945.945.945h10.589c-.189.189-.315.378-.504.567H18.419c-.504 0-.945.441-.945.945s.441.945.945.945h5.421c-1.135.756-2.395 1.324-3.719 1.765-3.593 1.072-7.438.693-10.715-1.072-3.341-1.765-5.736-4.727-6.807-8.383-.189-.693-.378-1.387-.441-2.143h8.951c.504 0 .945-.441.945-.945s-.441-.945-.945-.945H1.906v-.63h10.968c.504 0 .945-.441.945-.945s-.441-.945-.945-.945H2.159c.252-1.45.756-2.899 1.45-4.223 1.765-3.341 4.727-5.736 8.32-6.807 1.324-.378 2.71-.63 4.097-.63 2.269 0 4.601.567 6.618 1.702.567.315 1.135.63 1.639 1.009h-9.644c-.504 0-.945.441-.945.945s.441.945.945.945h11.787c.126.189.315.315.441.504h-8.446c-.504 0-.945.441-.945.945s.441.945.945.945h9.77a12.958 12.958 0 0 1 1.324 3.026c1.072 3.656.693 7.438-1.072 10.778z"/&gt;
+  &lt;/symbol&gt;
+  &lt;symbol viewBox="-10 -10 52 52" id="mars" xmlns="http://www.w3.org/2000/svg"&gt;
+    &lt;path d="M15.99 31.993c-2.582 0-5.164-.63-7.557-1.889-3.779-2.015-6.487-5.353-7.746-9.447s-.756-8.439 1.26-12.218S7.3 1.952 11.394.693s8.376-.756 12.155 1.26c3.779 2.015 6.487 5.353 7.746 9.447 1.26 4.094.819 8.376-1.197 12.155s-5.353 6.487-9.447 7.746c-1.574.441-3.149.693-4.66.693zm0-30.103a13.19 13.19 0 0 0-4.093.63c-3.59 1.071-6.55 3.527-8.313 6.802-1.763 3.338-2.141 7.116-1.071 10.706s3.527 6.55 6.802 8.376c3.338 1.763 7.116 2.141 10.706 1.071s6.55-3.527 8.313-6.802c1.763-3.338 2.141-7.116 1.071-10.706-1.071-3.59-3.527-6.55-6.802-8.313-2.015-1.197-4.282-1.763-6.613-1.763zm-3.715 9.006a2.92 2.92 0 0 1-1.448-.378c-.756-.378-1.26-1.071-1.511-1.826-.504-1.637.441-3.401 2.078-3.905.819-.252 1.637-.126 2.393.252s1.26 1.071 1.511 1.826c.252.819.126 1.637-.252 2.393s-1.071 1.26-1.826 1.511c-.315.063-.63.126-.945.126zm0-4.346c-.126 0-.252 0-.378.063a1.233 1.233 0 0 0-.819 1.511c.126.315.315.567.567.756.315.126.63.189.945.063s.567-.315.756-.567c.126-.315.189-.63.063-.945a1.72 1.72 0 0 0-.567-.756 1.505 1.505 0 0 0-.567-.126zM8.496 22.358c-.693 0-1.323-.189-1.952-.504-.945-.504-1.637-1.386-1.952-2.393-.63-2.141.567-4.471 2.708-5.101s4.471.567 5.101 2.708c.63 2.141-.567 4.471-2.708 5.101a4.28 4.28 0 0 1-1.197.189zm0-6.298c-.189 0-.441 0-.63.063-.567.189-1.008.567-1.323 1.071-.252.504-.315 1.134-.189 1.7.189.567.567 1.008 1.071 1.323.504.252 1.134.315 1.7.189.567-.189 1.008-.567 1.323-1.071.252-.504.315-1.134.189-1.7-.315-.945-1.197-1.574-2.141-1.574zm15.24 7.242c-.567 0-1.134-.126-1.637-.441-.819-.441-1.386-1.134-1.637-2.015s-.189-1.826.252-2.582c.441-.819 1.134-1.386 2.015-1.637 1.826-.567 3.716.504 4.282 2.267.252.882.189 1.826-.252 2.582-.441.819-1.134 1.386-2.015 1.637-.378.189-.693.189-1.008.189zm0-4.912c-.126 0-.315 0-.441.063-.819.252-1.26 1.134-1.008 1.889.126.378.378.693.756.882s.756.252 1.197.126c.819-.252 1.26-1.134 1.008-1.889a1.49 1.49 0 0 0-.756-.882c-.252-.189-.504-.189-.756-.189zm-1.07-5.227c.441-.126.882-.441 1.071-.882.252-.441.252-.945.126-1.386-.126-.441-.441-.882-.882-1.071s-.945-.252-1.386-.126c-.441.126-.882.441-1.071.882-.252.441-.252.945-.126 1.386s.441.882.882 1.071c.252.126.567.189.882.189.126.063.315 0 .504-.063zm-9.195 13.666c.945-.315 1.511-1.323 1.197-2.267s-1.323-1.511-2.267-1.197c-.945.315-1.511 1.323-1.197 2.267.126.441.441.882.882 1.071.252.126.567.189.882.189.126 0 .315 0 .504-.063z"/&gt;
+  &lt;/symbol&gt;
+  &lt;symbol viewBox="-10 -10 52 52" id="mercury" xmlns="http://www.w3.org/2000/svg"&gt;
+    &lt;path d="M31.336 11.397c-1.263-4.105-3.978-7.452-7.767-9.473S15.486-.539 11.381.724 3.929 4.639 1.908 8.428c-2.021 3.789-2.463 8.083-1.2 12.188s3.978 7.452 7.767 9.473a15.87 15.87 0 0 0 7.578 1.895c1.579 0 3.094-.253 4.61-.695 4.105-1.263 7.452-3.978 9.473-7.767 1.958-3.726 2.4-8.02 1.2-12.125zm-2.905 11.304c-1.768 3.347-4.736 5.747-8.336 6.82s-7.452.695-10.736-1.074c-3.347-1.768-5.747-4.736-6.82-8.399-1.074-3.6-.695-7.452 1.074-10.736 1.768-3.347 4.736-5.747 8.336-6.82 1.326-.379 2.716-.631 4.105-.631 2.273 0 4.61.568 6.631 1.705 3.347 1.768 5.747 4.736 6.82 8.399 1.074 3.6.695 7.389-1.074 10.736zm-6.441 1.894c.253 1.01 0 2.021-.758 2.715a2.922 2.922 0 0 1-2.021.821c-.253 0-.505 0-.758-.126-.505-.126-.821-.631-.695-1.137s.631-.821 1.137-.695c.316.063.695 0 .947-.253s.316-.568.253-.947a.942.942 0 0 1 .695-1.137c.568-.063 1.074.253 1.2.758zm5.178-4.484c.253 1.01 0 2.021-.758 2.715a2.922 2.922 0 0 1-2.021.821c-.253 0-.505 0-.758-.126-.505-.126-.821-.631-.695-1.137s.631-.821 1.137-.695c.316.063.695 0 .947-.253s.316-.568.253-.947a.942.942 0 0 1 .695-1.137c.568-.063 1.074.253 1.2.758zm-5.178-.631c.253 1.01 0 2.021-.758 2.715a2.922 2.922 0 0 1-2.021.821c-.253 0-.505 0-.758-.126-.505-.126-.821-.631-.695-1.137s.631-.821 1.137-.695c.316.063.695 0 .947-.253s.316-.568.253-.947a.942.942 0 0 1 .695-1.137c.568-.063 1.074.253 1.2.758z"/&gt;
+  &lt;/symbol&gt;
+  &lt;symbol viewBox="-10 -10 52 52" id="moon" xmlns="http://www.w3.org/2000/svg"&gt;
+    &lt;path d="M11.154 32c-1.885 0-3.833-.377-5.656-1.068-.377-.126-.628-.503-.628-.88s.251-.754.628-.88c6.85-2.576 10.62-10.118 8.484-17.219a13.934 13.934 0 0 0-8.484-9.112c-.377-.126-.628-.503-.628-.88s.251-.754.628-.88C5.812.955 6.189.83 6.566.704c4.085-1.257 8.358-.817 12.129 1.194s6.473 5.342 7.73 9.426c1.257 4.085.817 8.358-1.194 12.129s-5.342 6.473-9.426 7.73a13.688 13.688 0 0 1-4.65.817zm-2.639-2.137a13.6 13.6 0 0 0 6.724-.377c3.582-1.068 6.536-3.519 8.358-6.787 1.76-3.331 2.137-7.101 1.068-10.683s-3.519-6.536-6.787-8.358c-2.891-1.571-6.159-2.011-9.301-1.445 3.519 2.011 6.096 5.279 7.29 9.175 2.074 7.227-1.068 14.831-7.352 18.476z"/&gt;
+  &lt;/symbol&gt;
+  &lt;symbol viewBox="-10 -10 52 52" id="rocket" xmlns="http://www.w3.org/2000/svg"&gt;
+    &lt;path d="M22.689 9.444c-.785-.785-1.851-1.234-2.917-1.234-1.122 0-2.131.449-2.917 1.234a4.164 4.164 0 0 0 0 5.89c.785.785 1.851 1.234 2.917 1.234s2.131-.393 2.917-1.234c.785-.785 1.234-1.851 1.234-2.917-.056-1.178-.449-2.188-1.234-2.973zM21.455 14.1c-.954.954-2.524.954-3.478 0s-.954-2.524 0-3.478c.449-.449 1.066-.729 1.739-.729s1.29.28 1.739.729.729 1.066.729 1.739-.224 1.29-.729 1.739zM31.607.47a1.132 1.132 0 0 0-1.01-.337c-2.524.337-11.33 2.019-17.669 8.358a23.841 23.841 0 0 0-3.253 4.039c-2.356-.617-6.507-.224-9.311 4.992-.224.393-.168.898.112 1.234s.729.505 1.178.393c1.01-.224 3.365-.673 4.656.337-.168.449-.28.898-.449 1.29l-.168.505 5.16 5.16.505-.168c.393-.112.841-.28 1.29-.449 1.01 1.29.561 3.646.337 4.656-.112.449.056.898.393 1.178.224.168.449.224.673.224.168 0 .393-.056.561-.112 5.217-2.805 5.609-6.955 4.992-9.311 1.402-.898 2.748-2.019 4.039-3.253 6.338-6.338 7.965-15.089 8.358-17.669 0-.393-.112-.785-.393-1.066zm-2.019 4.094l-2.075-2.075a34.028 34.028 0 0 1 2.692-.561c-.112.617-.337 1.571-.617 2.636zM2.44 17.241c2.188-3.253 4.824-3.422 6.282-3.197a33.844 33.844 0 0 0-1.851 3.814c-1.346-.785-3.029-.785-4.431-.617zm12.396 12.396c.224-1.402.224-3.085-.617-4.431a33.844 33.844 0 0 0 3.814-1.851c.224 1.458.112 4.095-3.197 6.282zm7.572-11.667c-3.534 3.534-7.909 5.497-11.106 6.507L7.6 20.775c1.066-3.253 3.029-7.628 6.507-11.106 3.59-3.59 8.077-5.553 11.555-6.675l3.422 3.422c-1.122 3.478-3.085 7.965-6.675 11.555zM7.264 26.047l-4.768 4.768c-.168.168-.393.224-.617.224s-.449-.056-.617-.224a.813.813 0 0 1 0-1.178l4.768-4.768c.337-.337.841-.337 1.178 0s.337.841.056 1.178zm-5.778 2.356c-.168.168-.393.224-.617.224s-.449-.056-.617-.224a.813.813 0 0 1 0-1.178l3.478-3.478c.337-.337.841-.337 1.178 0s.337.841 0 1.178l-3.422 3.478zm6.9-1.458a.813.813 0 0 1 0 1.178l-2.3 2.3c-.168.168-.393.224-.617.224s-.449-.056-.617-.224a.813.813 0 0 1 0-1.178l2.3-2.3a.88.88 0 0 1 1.234 0z"/&gt;
+  &lt;/symbol&gt;
+...................
+
+
+
+  &lt;symbol viewBox="-10 -10 52 52" id="satellite" xmlns="http://www.w3.org/2000/svg"&gt;
+    &lt;path d="M21.777 17.432c.051-.203.051-.456.051-.71 0-.913-.355-1.724-.963-2.383l-2.637-2.637c-.659-.659-1.47-.963-2.383-.963s-1.724.355-2.383.963l-1.775 1.775c-.659.659-.963 1.47-.963 2.383s.355 1.724.963 2.383l2.637 2.637c.659.659 1.521.963 2.383.963.253 0 .456 0 .71-.051a5.504 5.504 0 0 0 1.521 4.867c.152.152.355.203.558.203s.406-.101.558-.203l2.789-2.789 1.115 1.115c.152.152.355.203.558.203s.406-.051.558-.203a.736.736 0 0 0 0-1.065l-1.115-1.115 2.789-2.789a.736.736 0 0 0 0-1.065c-1.42-1.318-3.296-1.825-4.969-1.521zm-3.803 2.383c-.71.71-1.876.71-2.637 0L12.7 17.178c-.355-.355-.558-.811-.558-1.318s.203-.963.558-1.318l1.775-1.775c.355-.355.811-.558 1.318-.558s.963.203 1.318.558l2.637 2.637c.355.355.558.811.558 1.318s-.203.963-.558 1.318l-1.775 1.775zm1.47 5.223c-1.065-1.521-.862-3.651.507-5.02a3.958 3.958 0 0 1 2.789-1.166c.761 0 1.572.203 2.231.659l-5.527 5.527zm-9.227-6.896c-.152-.152-.355-.203-.558-.203s-.406.101-.558.203L.228 27.066a.736.736 0 0 0 0 1.065l3.651 3.651c.152.152.355.203.558.203s.406-.051.558-.203l8.924-8.924a.736.736 0 0 0 0-1.065l-3.701-3.651zm-.508 1.623l.761.761-1.927 1.927-.761-.761 1.927-1.927zm-4.157 5.628l-.71-.761 1.927-1.927.761.761-1.977 1.927zm2.991-.862l.761.761-1.927 1.876-.761-.761 1.927-1.876zm-4.816 1.166l.761.761-1.927 1.927-.761-.761 1.927-1.927zm.659 4.462l-.761-.761 1.927-1.927.761.761-1.927 1.927zm5.983-5.932l-.761-.761 1.927-1.927.761.761-1.927 1.927zM31.765 3.895L28.114.244a.736.736 0 0 0-1.065 0l-8.924 8.924c-.152.152-.203.355-.203.558s.101.406.203.558l3.651 3.651c.152.152.355.203.558.203s.406-.101.558-.203l8.924-8.924c.254-.355.254-.811-.051-1.115zm-4.157-2.028l.761.761-1.927 1.927-.761-.761 1.927-1.927zM23.45 7.495l-.761-.761 1.927-1.876.761.761-1.927 1.876zm2.991-.862l.71.761-1.927 1.927-.761-.761 1.977-1.927zm-4.816 1.166l.761.761-1.927 1.876-.761-.761 1.927-1.876zm.659 4.462l-.71-.71 1.927-1.927.761.761-1.977 1.876zm5.983-5.932l-.761-.761 1.927-1.927.761.761-1.927 1.927z"/&gt;
+  &lt;/symbol&gt;
+  &lt;symbol viewBox="-10 -10 52 52" id="saturn" xmlns="http://www.w3.org/2000/svg"&gt;
+    &lt;path d="M31.925 10.39c-.827-2.48-7.789-1.131-11.096-.348-2.002-1.61-4.743-2.089-7.18-1.262s-4.308 2.872-4.96 5.396C5.6 15.568-.753 18.701.073 21.182c.348 1.044 1.828 1.436 3.699 1.436 2.219 0 5.047-.522 7.136-1.044 1.436 1.305 3.264 2.045 5.135 2.045.827 0 1.653-.131 2.437-.392 2.654-.914 4.569-3.133 5.047-5.918 3.655-1.61 9.181-4.569 8.398-6.919zm-4.873.435c-.044.043-.044.087-.087.087l-.044.043-.044.043-.044.043-.044.043c-.044 0-.044.043-.087.043s-.044.043-.087.043-.044.043-.087.087c-.044 0-.044.043-.087.043-.044.043-.087.043-.087.087l-.087.087c-.043.044-.087.043-.131.087-.044.043-.087.043-.087.087-.044.043-.087.043-.131.087s-.087.043-.131.087c-.044.043-.087.087-.174.087-.044.043-.087.043-.131.087s-.131.087-.174.131c-.044.043-.087.043-.131.087-.087.043-.131.087-.218.131a.337.337 0 0 1-.174.087c-.087.043-.131.087-.218.131-.131.087-.261.131-.435.218-.044.043-.131.043-.174.087-.087.043-.218.087-.305.174a.337.337 0 0 1-.218.087l-.261.131c0-.043-.044-.043-.044-.087-.044-.131-.087-.261-.174-.392-.044-.043-.044-.087-.087-.174l-.261-.522-.044-.043c-.087-.131-.174-.305-.261-.435-.044-.043-.087-.087-.087-.131a1.342 1.342 0 0 1-.218-.305c-.044-.043-.044-.043-.044-.087.044 0 .131-.043.174-.043.087 0 .174-.043.218-.043.131-.043.261-.043.392-.087.087 0 .131-.043.218-.043.131-.043.218-.043.348-.043.087 0 .131-.043.218-.043.131 0 .218-.043.348-.043.044 0 .131 0 .174-.043.131 0 .261-.043.348-.043h.087c.131 0 .305-.043.435-.043.131 0 .261-.043.348-.043h1.7c.044 0 .087 0 .087.043.044.131.044.174 0 .218zm-13.011-.826a6.185 6.185 0 0 1 6.179 1.262c.174.174.392.348.566.566v.043c.174.174.305.392.479.609l.044.043c.131.218.261.392.348.609 0 .043.044.043.044.087.087.218.218.435.261.653v.043c-.044 0-.044.043-.087.043a1.274 1.274 0 0 0-.348.174c-.131.043-.261.131-.392.174s-.218.087-.348.131c-.131.043-.261.131-.392.174s-.218.087-.348.131c-.131.043-.305.131-.435.174s-.218.087-.348.131c-.131.043-.305.131-.435.174s-.218.087-.348.131c-.174.043-.305.131-.479.174-.087.043-.218.087-.305.131-.174.087-.348.131-.566.218-.087.043-.174.043-.261.087-.261.087-.566.174-.827.305-.479.174-.957.305-1.479.479-.043 0-.131.044-.174.044-.479.131-.914.261-1.349.392-.087 0-.131.044-.218.044-.435.131-.87.261-1.305.348-.087 0-.131.044-.218.044-.435.131-.87.218-1.262.305h-.043c0-.044-.043-.087-.043-.174 0-.044-.043-.131-.043-.174 0-.087-.043-.131-.043-.218 0-.044-.043-.131-.043-.174 0-.087-.043-.131-.043-.218 0-.044 0-.131-.043-.174v-.218-.174-.218-.174-.218-.174c0-.087 0-.174.043-.261v-.131c0-.131.043-.261.043-.392.522-2.263 2.089-4.09 4.221-4.83zM8.254 18.31c-.131 0-.218.044-.348.044-.043 0-.131.044-.174.044-.174.044-.305.044-.479.087h-.131c-.087 0-.218.044-.305.044h-.131c-.087 0-.174 0-.261.044H4.55h-.174-.13-.043c-.043 0-.043 0-.087-.044 0-.044.043-.044.043-.087l.043-.044s.043-.044.043-.087l.043-.044.087-.087.043-.044.087-.087c.043 0 .043-.044.087-.044l.087-.087.087-.087c.044-.043.087-.044.131-.087l.087-.087c.044-.043.087-.087.131-.087.043-.044.087-.044.131-.087s.131-.087.174-.131c.043-.044.087-.044.131-.087.087-.044.174-.087.261-.174.043 0 .043-.044.087-.044.131-.087.218-.131.348-.218.043-.044.087-.044.131-.087.087-.044.174-.087.261-.174a.326.326 0 0 1 .174-.087l.261-.131c.087-.044.131-.087.218-.131l.261-.131c.087-.044.174-.087.218-.131.087-.043.218-.087.305-.131l.261-.131c.043-.043.087-.043.131-.087v.653c0 .174.043.348.043.522v.044c.043.174.043.392.087.566 0 .044.043.131.043.174.043.131.043.261.087.392 0 .044 0 .044.043.087-.087 0-.174.044-.261.044-.087.174-.174.174-.261.218zm9.834 3.655c-1.915.653-3.96.348-5.613-.783.043 0 .087-.044.131-.044.131-.044.261-.087.348-.087.348-.087.696-.174 1.044-.305.174-.044.305-.087.479-.131.348-.087.653-.218 1.001-.305.131-.044.305-.087.435-.131.479-.131.957-.305 1.392-.479.479-.174.957-.305 1.392-.479.131-.044.305-.087.435-.174.305-.131.653-.261.957-.348.131-.044.305-.131.435-.174.348-.131.653-.261 1.001-.392.131-.044.218-.087.348-.131.044 0 .087-.044.131-.044-.566 1.871-2.002 3.351-3.916 4.003zm4.612-5.701c-1.784.783-3.742 1.566-5.787 2.263s-4.047 1.262-5.961 1.741c-6.788 1.61-9.442 1.044-9.616.522-.087-.261.348-.914 1.479-1.784v.088c0 .044 0 .044.043.087 0 .044.043.044.043.087s.043.044.043.044v.044c0 .044.043.044.043.087l.087.087h.043c.043 0 .043.044.087.044h.043l.261.131h.043c.043 0 .087.044.131.044h.043c.131.044.261.087.435.087h.043c.087 0 .131 0 .218.044h.043c.174 0 .392.044.653.044H5.551c.261 0 .566-.044.914-.087h.087c.131 0 .305-.044.435-.044h.087c.348-.044.74-.087 1.175-.174.043 0 .087 0 .131-.044.174-.044.348-.044.522-.087.043 0 .131-.044.174-.044s.131-.044.174-.044l.522-.131.783-.174c1.871-.435 3.916-1.044 6.005-1.741s4.047-1.479 5.831-2.263l.696-.348.479-.218c.479-.218.914-.435 1.262-.653.044-.043.131-.043.174-.087.044 0 .044-.043.087-.043.087-.043.218-.131.305-.174.218-.131.435-.261.609-.348.044 0 .087-.043.087-.043a.93.93 0 0 0 .218-.131c.044 0 .044-.043.087-.043.044-.043.087-.087.131-.087.044-.043.087-.043.131-.087l.044-.043c.087-.043.131-.087.218-.131 0 0 .044 0 .044-.043a.577.577 0 0 0 .174-.131h.044c.044-.043.131-.087.174-.131l.044-.043.131-.131.044-.043c.044-.043.087-.087.131-.087v-.043l.261-.261c.044-.043.087-.087.087-.131.044-.043.044-.087.087-.131.044-.043.044-.087.087-.131 0-.043.044-.087.044-.087.218-.435.131-.74.044-.914 1.436 0 2.176.261 2.263.522.261.479-1.479 2.567-7.876 5.396z"/&gt;
+  &lt;/symbol&gt;
+  &lt;symbol viewBox="-10 -10 52 52" id="stars" xmlns="http://www.w3.org/2000/svg"&gt;
+    &lt;path d="M6.189 20.773c-.096 0-.192 0-.287-.048a.691.691 0 0 1-.431-.527l-1.006-5.411-4.214-3.544a.623.623 0 0 1-.239-.623c0-.239.144-.431.383-.575l4.836-2.634 2.107-5.076c.096-.239.287-.383.527-.431s.479 0 .67.192l3.975 3.783 5.507.383c.239 0 .431.144.575.335.096.192.144.479.048.67l-2.394 4.98 1.341 5.363c.048.239 0 .479-.144.67s-.383.287-.623.239l-5.459-.718-4.645 2.921c-.239 0-.383.048-.527.048zm-4.166-9.96l3.591 3.017c.144.096.192.239.239.431l.862 4.645 3.974-2.49c.144-.096.287-.144.479-.096l4.645.623-1.149-4.549c-.048-.144 0-.335.048-.479l2.011-4.262-4.597-.383a.712.712 0 0 1-.431-.192l-3.4-3.256L6.523 8.18c-.048.144-.192.287-.335.383l-4.166 2.251zm25.284 12.115a.771.771 0 0 1-.431-.144l-2.586-2.011-3.256.144c-.239 0-.479-.096-.623-.287s-.192-.431-.096-.67l1.053-3.065-1.101-3.065c-.096-.239-.048-.479.096-.67s.383-.287.623-.287l3.256.048 2.586-2.011c.192-.144.431-.192.67-.144s.383.239.479.479l.958 3.113 2.73 1.82c.192.144.335.335.335.575s-.096.479-.287.575l-2.825 1.915-.862 3.16a.616.616 0 0 1-.479.479c-.096 0-.144.048-.239.048zm-2.777-3.591c.144 0 .287.048.431.144l1.963 1.484.67-2.394a.748.748 0 0 1 .287-.383l2.011-1.389-2.059-1.389a.742.742 0 0 1-.287-.383l-.718-2.346-1.915 1.532a.808.808 0 0 1-.479.144l-2.49-.048.862 2.299a.815.815 0 0 1 0 .479l-.814 2.346 2.538-.096c-.048 0-.048 0 0 0zm-9.482 10.774c-.144 0-.239-.048-.383-.096l-1.82-1.053-2.059.335c-.239.048-.479-.048-.623-.192s-.239-.431-.192-.67l.431-2.059-.958-1.868c-.096-.192-.096-.479 0-.67s.335-.335.575-.383l2.107-.239 1.437-1.484c.144-.192.383-.239.623-.192s.431.192.527.431l.862 1.915 1.868.958c.192.096.383.287.383.527a.625.625 0 0 1-.239.623l-1.58 1.389-.287 2.059a.745.745 0 0 1-.383.527c-.096.096-.192.144-.287.144zm-2.059-2.634c.144 0 .239.048.383.096l1.149.67.192-1.293c.048-.144.096-.335.239-.431l.958-.862-1.149-.575c-.144-.096-.287-.192-.335-.335l-.527-1.197-.91.91a.712.712 0 0 1-.431.192l-1.389.144.623 1.149a.566.566 0 0 1 .048.479l-.287 1.293 1.293-.239h.144z"/&gt;
+  &lt;/symbol&gt;
+  &lt;symbol viewBox="-10 -10 52 52" id="sun" xmlns="http://www.w3.org/2000/svg"&gt;
+    &lt;path d="M15.946 26.461c-5.726 0-10.435-4.656-10.435-10.435S10.22 5.591 15.946 5.591 26.381 10.3 26.381 16.026s-4.709 10.435-10.435 10.435zm0-19.424c-4.923 0-8.99 4.013-8.99 8.99 0 4.923 4.013 8.99 8.99 8.99s8.99-4.067 8.99-8.99-4.067-8.99-8.99-8.99zm4.281 24.936l-.803-.696c-.963-.856-2.194-1.284-3.478-1.284s-2.515.482-3.478 1.284l-.803.696-.375-1.017c-.428-1.231-1.231-2.247-2.355-2.89s-2.408-.856-3.639-.589l-1.07.214.214-1.07a5.075 5.075 0 0 0-.589-3.639c-.642-1.124-1.659-1.926-2.89-2.355l-.963-.321.696-.803c.856-.963 1.284-2.194 1.284-3.478S1.496 13.51.694 12.547l-.696-.803 1.017-.375c1.231-.428 2.247-1.231 2.89-2.355s.856-2.408.589-3.639l-.214-1.07 1.07.214a5.075 5.075 0 0 0 3.639-.589c1.124-.642 1.926-1.659 2.355-2.89l.375-1.017.803.696c.963.856 2.194 1.284 3.478 1.284s2.515-.482 3.478-1.284l.803-.696.375 1.017c.428 1.231 1.231 2.247 2.355 2.89s2.408.856 3.639.589l1.07-.214-.214 1.07a5.075 5.075 0 0 0 .589 3.639c.642 1.124 1.659 1.926 2.89 2.355l1.017.375-.696.803c-.856.963-1.284 2.194-1.284 3.478s.482 2.515 1.284 3.478l.696.803-1.017.375c-1.231.428-2.247 1.231-2.89 2.355s-.856 2.408-.589 3.639l.214 1.07-1.07-.214c-1.284-.268-2.569-.053-3.639.589-1.124.642-1.926 1.659-2.355 2.89l-.428.963zm-4.281-3.425c1.284 0 2.569.375 3.639 1.07.589-1.124 1.498-2.087 2.622-2.729s2.408-.963 3.692-.91c-.053-1.284.214-2.569.91-3.692a6.768 6.768 0 0 1 2.729-2.622 6.723 6.723 0 0 1 0-7.278c-1.124-.589-2.087-1.498-2.729-2.622s-.963-2.408-.91-3.692c-1.284.053-2.569-.214-3.692-.91a6.768 6.768 0 0 1-2.622-2.729 6.723 6.723 0 0 1-7.278 0c-.589 1.124-1.498 2.087-2.622 2.729s-2.408.963-3.692.91c.053 1.284-.214 2.569-.91 3.692a6.768 6.768 0 0 1-2.729 2.622 6.723 6.723 0 0 1 0 7.278c1.124.589 2.087 1.498 2.729 2.622s.963 2.408.91 3.692c1.284-.053 2.569.214 3.692.91a6.768 6.768 0 0 1 2.622 2.729 6.723 6.723 0 0 1 3.639-1.07zm7.385-13.538c.375-.107.589-.482.535-.91-.803-2.89-3.104-5.191-6.047-5.993a.734.734 0 0 0-.91.535.734.734 0 0 0 .535.91 7.082 7.082 0 0 1 4.977 4.977c.107.321.375.535.696.535.107 0 .161-.053.214-.053z"/&gt;
+  &lt;/symbol&gt;
+  &lt;symbol viewBox="-10 -10 52 52" id="telescope" xmlns="http://www.w3.org/2000/svg"&gt;
+    &lt;path d="M31.539 12.324L28.403 1.702c-.202-.607-.607-1.113-1.163-1.416s-1.214-.354-1.821-.202L23.75.59a2.487 2.487 0 0 0-1.416 1.163c-.202.354-.253.708-.303 1.062l-9.307 3.389c-.354.152-.556.556-.455.91l-9.206 3.187c-.405.152-.607.556-.455.91l.455 1.619-2.175.759c-.405.152-.607.556-.455.91l.708 2.428a.744.744 0 0 0 .708.556h.152l2.226-.506.455 1.619a.744.744 0 0 0 .708.556h.202l9.509-2.276a.744.744 0 0 0 .708.556h.152l2.428-.556v2.074l-8.093 10.319c-.253.303-.202.809.101 1.062a.817.817 0 0 0 .455.152.792.792 0 0 0 .607-.303l7.031-8.801v9.863c0 .405.354.759.759.759s.759-.354.759-.759v-9.863l6.98 8.801a.722.722 0 0 0 .607.303c.152 0 .354-.051.455-.152.303-.253.405-.759.101-1.062L20.007 18.95v-2.428l5.868-1.315a2.38 2.38 0 0 0 1.669.708c.202 0 .455-.051.658-.101l1.669-.506a2.487 2.487 0 0 0 1.416-1.163c.354-.556.405-1.163.253-1.821zM2.404 15.915l-.303-1.012 1.416-.506.354 1.163-1.467.354zm3.591 1.619l-.405-1.366c0-.101 0-.202-.051-.253l-.809-2.731c-.051-.101-.051-.152-.101-.253l-.405-1.366 8.498-2.934 1.973 6.829-8.7 2.074zM22.383 4.332l1.163 3.945 1.619 5.513-8.751 1.973-2.479-8.346 8.447-3.086zm7.638 9.105a.805.805 0 0 1-.506.405l-1.669.506c-.455.152-.91-.152-1.062-.607L25.57 9.593l-1.973-6.424c-.051-.202-.051-.455.051-.658s.303-.354.506-.405l1.669-.506c.101 0 .152-.051.253-.051.152 0 .303.051.405.101a.805.805 0 0 1 .405.506l3.136 10.622a.752.752 0 0 1 0 .658z"/&gt;
+  &lt;/symbol&gt;
+  &lt;symbol viewBox="-10 -10 52 52" id="ufo" xmlns="http://www.w3.org/2000/svg"&gt;
+    &lt;path d="M6.286 18.119c-.524-.143-1.048.143-1.191.619a.76.76 0 0 0 .095.714c.143.238.333.381.571.476.095.048.19.048.286.048.429 0 .81-.286.905-.667a.953.953 0 0 0-.667-1.191zM17.809 10.691c-.381-.095-.762.095-.857.476s.095.762.476.857c1.143.333 2.048 1.191 2.333 2.333a.701.701 0 0 0 .667.524c.048 0 .143 0 .19-.048.381-.095.619-.476.476-.857-.381-1.571-1.667-2.857-3.286-3.286zM11.143 19.643c-.524-.143-1.048.143-1.191.619a.76.76 0 0 0 .095.714c.143.238.333.381.571.476.095.048.19.048.286.048.143 0 .286-.048.429-.095.238-.143.381-.333.476-.571.095-.476-.19-1.048-.667-1.191zM22.143 20.309a.893.893 0 0 0-1.191-.619.893.893 0 0 0-.619 1.191c.095.238.238.429.476.571.143.095.286.095.429.095.095 0 .19 0 .286-.048.238-.095.429-.238.571-.476.095-.238.143-.476.048-.714z"/&gt;
+    &lt;path d="M24.238 14.309l-.143-.429-1.381.429c.19.667.286 1.333.286 2.048 0 .476-.333.857-.81.952-1.905.429-3.952.619-6.048.619s-4.143-.19-6.048-.619c-.476-.095-.81-.524-.81-.952 0-.714.095-1.429.333-2.095A6.802 6.802 0 0 1 16.141 9.5a6.858 6.858 0 0 1 6.571 4.809l1.381-.429c-1.095-3.476-4.238-5.809-7.905-5.809a8.29 8.29 0 0 0-7.905 5.762l-.143.429c-2.905.476-8.143 1.762-8.143 4.524 0 2.571 5.476 5.143 16 5.143s16-2.571 16-5.143c.048-2.667-4.952-3.952-7.762-4.476zM16.047 22.5C7 22.5 1.476 20.357 1.476 18.786c0-.952 2.238-2.238 6.476-3.048v.571c0 1.143.81 2.095 1.905 2.333 2 .429 4.143.667 6.381.667s4.333-.238 6.381-.667a2.448 2.448 0 0 0 1.905-2.381v-.524c4.048.81 6.143 2.048 6.143 2.952-.048 1.619-5.571 3.809-14.619 3.809z"/&gt;
+    &lt;path d="M16.476 19.976c-.238-.143-.476-.143-.714-.095a.893.893 0 0 0-.619 1.191c.095.238.238.429.476.571.143.095.286.095.429.095.095 0 .19 0 .286-.048.238-.095.429-.238.571-.476s.143-.476.095-.714a.943.943 0 0 0-.524-.524zM26.952 18.738a.893.893 0 0 0-1.191-.619.893.893 0 0 0-.619 1.191.956.956 0 0 0 .905.667c.095 0 .19 0 .286-.048.238-.095.429-.238.571-.476.095-.19.143-.476.048-.714z"/&gt;
+  &lt;/symbol&gt;
+  &lt;symbol viewBox="-10 -10 52 52" id="uranus" xmlns="http://www.w3.org/2000/svg"&gt;
+    &lt;path d="M31.949 11.213c-.173-.519-.519-1.772-7.953-.346-.864-1.34-2.031-2.464-3.501-3.242-2.248-1.21-4.798-1.47-7.218-.735s-4.409 2.377-5.619 4.582a9.161 9.161 0 0 0-1.124 4.625C-.468 19.036-.079 20.29.051 20.808c.086.346.303.994 2.55.994 1.167 0 2.896-.173 5.403-.648.864 1.34 2.031 2.464 3.501 3.242A9.62 9.62 0 0 0 16 25.52c.908 0 1.859-.13 2.766-.389a9.56 9.56 0 0 0 5.619-4.582 9.161 9.161 0 0 0 1.124-4.625c6.959-2.939 6.57-4.193 6.44-4.711zm-23.167.907c1.037-1.945 2.766-3.328 4.841-3.976A9.037 9.037 0 0 1 16 7.798c1.34 0 2.68.346 3.89.994 1.945 1.037 3.328 2.766 3.976 4.841.13.475.216.908.303 1.383a92.344 92.344 0 0 1-7.65 2.637c-2.723.821-5.403 1.513-7.823 1.988a7.181 7.181 0 0 1-.519-1.34c-.648-2.031-.432-4.236.605-6.181zm-7.348 8.299c.346-.432 1.686-1.426 5.23-2.896.086.432.173.864.259 1.253.13.432.303.821.475 1.21-3.804.648-5.446.562-5.965.432zm16.943 3.458c-2.118.648-4.322.389-6.224-.648a8.463 8.463 0 0 1-2.723-2.377c2.334-.475 4.884-1.167 7.477-1.945s5.1-1.642 7.305-2.507c-.043 1.21-.389 2.377-.951 3.458-1.081 1.945-2.809 3.371-4.884 4.02zm7.002-9.336a62.656 62.656 0 0 0-.259-1.253c-.13-.432-.303-.821-.475-1.21 3.76-.692 5.446-.605 5.965-.432-.389.389-1.729 1.383-5.23 2.896z"/&gt;
+  &lt;/symbol&gt;
+&lt;/svg&gt;</code></pre></div></div></section><section data-id="2ca2a3f53c7fded30cdee7543415e6fc">
+<div class="sl-block" data-block-type="text" style="width: 790px; left: 117px; top: 45px; height: auto;" data-block-id="a7587741e29528c4f604f5ec3f46de5d">
+    <div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;">
+<h3><span style="font-size:1.4em"><strong><span class="primary">symbol</span></strong></span></h3>
+</div>
+</div>
+
+
+<div class="sl-block" data-block-type="code" style="width: 869px; height: 72px; left: 78px; top: 144px;" data-block-id="cbb09780fd54f238d99d18496d2cc34f"><div class="sl-block-content notranslate" data-highlight-theme="monokai" style="z-index: 12;"><pre><code>&lt;svg id="logo-svg" viewBox="0 20 80 80"&gt;
+     &lt;use xlink:href="#ufo"/&gt;
+&lt;/svg&gt;</code></pre></div></div>
+<div class="sl-block" data-block-type="iframe" style="width: 869px; height: 288px; left: 78px; top: 288px;" data-block-id="1491242ddcbd45b54a18cfd523320576"><div class="sl-block-content" style="z-index: 13;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="//codepen.io/carmenansio/embed/388bdc4448c8df27bff6ffc4287fbc6d/?height=265&amp;theme-id=0&amp;default-tab=result&amp;embed-version=2&amp;editable=true"></iframe></div></div>
+</section><section data-id="aabc155d89d29e09f5969a738c04dc17">
+<div class="sl-block" data-block-type="text" style="width: 790px; left: 117px; top: 45px; height: auto;" data-block-id="a508dee619cae7fbcd111e9ea6c9b182">
+    <div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;">
+<h3><span style="font-size:1.4em"><strong><span class="primary">img</span></strong></span></h3>
+</div>
+</div>
+
+
+<div class="sl-block" data-block-type="code" data-block-id="c6d8b1da0a2e4f570c99b7f8d79cb4f5" style="min-width: 30px; min-height: 30px; width: 869px; height: 72px; left: 79px; top: 144px;"><div class="sl-block-content notranslate" data-highlight-theme="monokai" style="z-index: 12;"><pre><code>&lt;img src="http://carmenansio.com/wtm2018/sprite.view.svg#ufo" alt="ufo"&gt;</code></pre></div></div>
+<div class="sl-block" data-block-type="iframe" data-block-id="7105651950bdfdd642860244bf243497" style="min-width: 30px; min-height: 30px; width: 869px; height: 288px; left: 78px; top: 288px;"><div class="sl-block-content" style="z-index: 14;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="//codepen.io/carmenansio/embed/b4060bd4b45beecbfa3f21a28ccb4a79/?height=265&amp;theme-id=0&amp;default-tab=result&amp;embed-version=2&amp;editable=true"></iframe></div></div></section><section data-id="e242625490bbcd21225047d72e2b7c3c"><div class="sl-block" data-block-type="code" data-block-id="a0e956c5f458af40f2cc55f9da3f7557" style="min-width: 30px; min-height: 30px; width: 348px; height: 432px; left: 185px; top: 144px;"><div class="sl-block-content notranslate" data-highlight-theme="monokai" style="z-index: 11; font-size: 77%;"><pre><code>var gulp = require('gulp'),
+    svgSprite = require('gulp-svg-sprite');
+
+gulp.task('svg', function() {  
+ 
+  config = {
+    shape: {
+      dimension: { 
+        maxWidth: 32,
+        maxHeight: 32
+      },
+      spacing: { 
+        padding: 10
+      },
+      dest: 'dist/sprite'
+    },
+    mode: {
+      view: { 
+        bust: false,
+        render: {
+          scss: true
+        }
+      },
+      symbol: true
+    }
+  };
+
+gulp.src('src/assets/icons/*.svg')
+  .pipe(svgSprite(config))
+  .pipe(gulp.dest('out'));</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="width: 790px; left: 117px; top: 45px; height: auto;" data-block-id="74c599333e152d42951313d1de140e91">
+    <div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 12;">
+<h3><span style="font-size:1.4em"><strong><span class="primary">Gulp / Grunt </span>task</strong></span></h3>
+</div>
+</div>
+<div class="sl-block" data-block-type="image" data-block-id="b8021e5add68ffc7d2420c17e47beb5b" style="min-width: 30px; min-height: 30px; width: 126px; height: 432px; left: 59px; top: 144px;"><div class="sl-block-content" style="z-index: 13;"><img style="" data-natural-width="219" data-natural-height="751" data-lazy-loaded="" data-src="wtmasturias/d6ac9885917374fed373a14f3c626b21.png"></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="39064065b4776adec1a1cd3fef4a5547" style="min-width: 30px; min-height: 30px; width: 432px; height: 432px; left: 533px; top: 144px;"><div class="sl-block-content" style="z-index: 14;"><img style="" data-natural-width="208" data-natural-height="208" data-lazy-loaded="" data-src="wtmasturias/321027c41f749eacda11efca6f5322a6.svg"></div></div>
+<div class="sl-block" data-block-type="shape" data-block-id="bd9efd1389e77075ca72cf665eccc808" style="min-width: 4px; min-height: 4px; width: 432px; height: 432px; left: 533px; top: 144px;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(238, 238, 238)" data-shape-stretch="true" style="z-index: 10;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 432 432"><rect width="432" height="432" class="shape-element" fill="rgb(238, 238, 238)"></rect></svg></div></div></section></section><section class="stack" data-id="bbcd2e36995ab2af28546b9c0097c606"><section data-id="51a5a864b4ad8c6df938fb0dfec8bf3d"><div class="sl-block" data-block-type="text" style="width: 792px; left: 116px; top: 240px; height: auto;" data-block-id="c37c7d4a8f524778f605de1e558b842e">
+    <div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-down">
+<h3><span style="font-size:2.5em"><strong><span class="primary">Responsive</span> Encounters </strong></span></h3>
+</div>
+</div></section><section data-id="cf77632c8389274327ed6b9eb35df930"><div class="sl-block" data-block-type="text" style="width: 869px; left: 79px; top: 72px; height: auto;" data-block-id="92660ad3a3e33c72e72ecabc4ecd3009">
+    <div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;">
+<h3><span style="font-size:1.4em">Remove <strong><span class="primary">'width'</span> </strong> &amp; <strong><span class="primary">'height'</span></strong> attributes</span></h3>
+</div>
+</div>
+<div class="sl-block" data-block-type="code" data-block-id="868e9ba7448e216690ff182d8a2e2834" style="min-width: 30px; min-height: 30px; width: 869px; height: 216px; left: 79px; top: 216px;"><div class="sl-block-content fragment notranslate" style="z-index: 12; font-size: 120%;" data-highlight-theme="monokai" data-fragment-index="0"><pre><code>&lt;svg xmlns="http://www.w3.org/2000/svg" width="270" height="80" 
+viewBox="0 0 270 80"&gt;
+
+
+&lt;!-- SVG content --&gt;
+
+
+&lt;/svg&gt;</code></pre></div></div></section><section data-id="ba8ee6994bcee4c59bf55306a9f38231"><div class="sl-block" data-block-type="text" style="width: 869px; left: 79px; top: 72px; height: auto;" data-block-id="9f7ca30e428d6b055c18eb4257c88a45">
+    <div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h3><span style="font-size:1.4em">Add <strong><span class="primary">'viewBox'</span> </strong> attribute if not already</span></h3>
+</div>
+</div>
+<div class="sl-block" data-block-type="code" style="width: 869px; height: 216px; left: 79px; top: 216px;" data-block-id="92b6acfb0fc61ab180608b667b65bc1b"><div class="sl-block-content fragment notranslate" style="z-index: 11; font-size: 120%;" data-highlight-theme="monokai" data-fragment-index="0"><pre><code>&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 80"&gt;
+
+
+&lt;!-- SVG content --&gt;
+
+
+&lt;/svg&gt;</code></pre></div></div></section><section data-id="ba87ae3865b0c8da98dd325df5e94653"><div class="sl-block" data-block-type="text" style="width: 869px; left: 78px; top: 72px; height: auto;" data-block-id="ae995db8befa254d8509bf7d25e2d4e9">
+    <div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h3><span style="font-size:1.4em">Set <strong><span class="primary">'preserveAspectRatio'</span> </strong> to <strong><span class="primary">'xMidyMid meet'</span></strong></span></h3>
+</div>
+</div>
+<div class="sl-block" data-block-type="code" style="width: 869px; height: 216px; left: 79px; top: 216px;" data-block-id="8ac5ffa035f7118452f65a8687d9fa23"><div class="sl-block-content fragment notranslate" style="z-index: 11; font-size: 120%;" data-highlight-theme="monokai" data-fragment-index="0"><pre><code>&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 80" 
+preserveAspectRatio="xMidYMid meet"&gt;
+
+
+&lt;!-- SVG content --&gt;
+
+
+&lt;/svg&gt;</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 632px; left: 316px; top: 465px;" data-block-id="99a321f01eec0e617f38f648b8d684b7">
+    <div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; text-align: right;" data-fragment-index="0">
+<p><span style="font-size:0.7em">Note that preserveAspectRatio has no effect if no viewbox is set</span></p>
+</div>
+</div></section><section data-id="6740d9ca32c1f15c1359baf6a430b711"><div class="sl-block" data-block-type="iframe" style="width: 1024px; height: 288px; left: 0px; top: 216px;" data-block-id="094c3b4ede9786e05c2d61543e8cb0e4"><div class="sl-block-content" style="z-index: 10;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="//codepen.io/carmenansio/embed/b0c4e5cee36e205f108b7350e0fbf048/?height=265&amp;theme-id=0&amp;default-tab=result&amp;embed-version=2&amp;editable=true"></iframe></div></div>
+<div class="sl-block" data-block-type="text" style="width: 790px; left: 117px; top: 72px; height: auto;" data-block-id="261e2ef9c35085f0030dc3416eca87a8">
+    <div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-down" dir="ui">
+<h3><span style="font-size:1.4em"><strong><span class="primary">Responsive </span>Logo</strong></span></h3>
+</div>
+</div></section></section><section class="stack" data-id="8dc18609470b65a698d7fa767f5a9d49"><section data-id="af3c8773277f57e75258bc9e65a8f258"><div class="sl-block" data-block-type="text" style="width: 869px; left: 78px; top: 240px; height: auto;" data-block-id="99e43ada9a4a2a15dac1cca88f6bda49">
+    <div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-down">
+<h3><span style="font-size:2.5em"><strong><span class="primary">Interaction</span></strong></span></h3>
+</div>
+</div></section><section data-id="b3c0746ab4afba07b0a0d8f0ec636651"><div class="sl-block" data-block-type="iframe" style="width: 1024px; height: 432px; left: 0px; top: 144px;" data-block-id="430d6a28da493b21e05c60384d865e6c"><div class="sl-block-content" style="z-index: 10;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="//codepen.io/carmenansio/embed/0183f9d0ab3488cfa5f3ca4b9fcc3106/?height=265&amp;theme-id=0&amp;default-tab=result&amp;embed-version=2&amp;editable=true"></iframe></div></div>
+<div class="sl-block" data-block-type="text" style="width: 790px; left: 117px; top: 45px; height: auto;" data-block-id="d2cb51fa7d9c00181ba58143a8787823">
+    <div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-down" dir="ui">
+<h3><span style="font-size:1.4em"><strong>Mouse over <span class="primary">Animation</span></strong></span></h3>
+</div>
+</div></section><section data-id="32ebac4b1ea0babbe3d02f4ddacfb9f6">
+
+<div class="sl-block" data-block-type="image" style="width: 33px; height: 33px; left: 896px; top: 363px;" data-block-id="1c4edb25e69bc6b9661878d7599e9781">
+    <div class="sl-block-content fragment" style="z-index: 11;" data-fragment-index="1">
+        <img style="visibility: visible;" data-natural-width="489" data-natural-height="489" data-lazy-loaded="" data-src="wtmasturias/9e14c13b7db0ef087e3dafbb53e93b0a.png">
+    </div>
+</div>
+
+<div class="sl-block" data-block-type="text" style="width: 790px; left: 117px; top: 72px; height: auto;" data-block-id="c27928b45ff0af87dd042fa31ac54f1d">
+    <div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 12;">
+<h3><span style="font-size:1.4em"><strong><span class="primary">Animation </span>Tools</strong></span></h3>
+</div>
+</div>
+<div class="sl-block" data-block-type="text" style="width: 196px; left: 100px; top: 360px; height: auto;" data-block-id="838ca030a71dc0ca4f160209bf8f9397">
+    <div class="sl-block-content fragment" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 13;" data-fragment-index="0">
+<h3>Online editor</h3>
+</div>
+</div>
+<div class="sl-block" data-block-type="text" style="width: 129px; left: 767px; top: 360px; height: auto;" data-block-id="c610264fd7d72b06437f805acc266615">
+    <div class="sl-block-style" style="z-index: 14; transform: rotate(360deg);"><div class="sl-block-content fragment" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 14;" data-fragment-index="1">
+<h3>Timeline</h3>
+</div></div>
+</div>
+
+<div class="sl-block" data-block-type="image" data-block-id="6a28ddb5e85311cfdc00bf1119b8d798" style="min-width: 30px; min-height: 30px; width: 237px; height: 55px; left: 79px; top: 288px;"><div class="sl-block-content fragment" style="z-index: 15;" data-fragment-index="0"><img data-natural-width="100" data-natural-height="23" style="" data-lazy-loaded="" data-src="wtmasturias/8bd27e251e356a4ca26d664985f54264.svg"></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="23be7459dd559507971821d2a1094f3d" style="min-width: 30px; min-height: 30px; width: 121px; height: 56px; left: 792px; top: 288px;"><div class="sl-block-content fragment" style="z-index: 16;" data-fragment-index="1"><img data-natural-width="242" data-natural-height="112" style="" data-lazy-loaded="" data-src="wtmasturias/e89b477c8a6aefce89b6f24f6b00ab42.png"></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="1fef731c40096abbd034c6a85cc8bf40" style="min-width: 30px; min-height: 30px; width: 376px; height: 87px; left: 365px; top: 288px;"><div class="sl-block-content fragment" style="z-index: 17;" data-fragment-index="2"><img data-natural-width="1032" data-natural-height="239" style="" data-lazy-loaded="" data-src="wtmasturias/f8d2617607a32841265dd98d75f79dad.png"></div></div></section><section data-id="4dbeb4c318462016b7f3ad7ee82b34ab"><div class="sl-block" data-block-type="iframe" data-block-id="557098c67c2628620cb0b67d25755335" style="min-width: 30px; min-height: 30px; width: 1024px; height: 544px; left: 0px; top: 0px;"><div class="sl-block-style" style="z-index: 10;"><div class="sl-block-content" style="z-index: 10;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="//codepen.io/dsenneff/embed/QajVxO/?height=265&amp;theme-id=0&amp;default-tab=result&amp;embed-version=2"></iframe></div></div></div>
+<div class="sl-block" data-block-type="text" style="width: 316px; left: 708px; top: 537px; height: auto;" data-block-id="24a986ab64d561c863cbfa9e37114c0a">
+    <div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle" style="z-index: 13; text-align: right;" dir="ui">
+<p><a href="https://codepen.io/dsenneff/" target="_blank"><span style="font-size:0.7em">https://codepen.io/dsenneff/</span></a><span style="font-size:0.7em"><a href="https://codepen.io/dsenneff/" target="_blank"><span class="u-dir username"> ​</span></a> </span><a href="https://codepen.io/dsenneff/" target="_blank"><span style="font-size:0.7em"> </span></a></p>
+</div>
+</div></section></section><section data-id="1d2b21416898e30a796b4161e8be7ef3"><div class="sl-block" data-block-type="image" data-block-id="076766b1d047c024ef0b8f9be9437491" style="min-width: 30px; min-height: 30px; width: 1024px; height: 522px; left: 0px; top: 54px;"><div class="sl-block-content" style="z-index: 10;"><img style="" data-natural-width="500" data-natural-height="255" data-lazy-loaded="" data-src="wtmasturias/08bd60a53b75417dd8124e348d39cdee.gif"></div></div>
+<div class="sl-block" data-block-type="text" style="width: 790px; left: 117px; top: 0px; height: auto;" data-block-id="34acc720c7c95422b52fb93c0e012a24">
+    <div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 13; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-down">
+<h3><span style="font-size:2.5em"><strong>Muchas <span class="primary">Acks!</span></strong></span></h3>
+</div>
+</div>
+<div class="sl-block" data-block-type="shape" data-block-id="2fd00907095d5aa38f6583f4531f70bc" style="min-width: 4px; min-height: 4px; width: 1024px; height: 97px; left: 0px; top: 0px;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="#000000" data-shape-stretch="true" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 1024 97"><rect width="1024" height="97" class="shape-element" fill="#000000"></rect></svg></div></div></section>
+			</div>
+		</div>
+
+		<script>
+			var SLConfig = {"deck": {"id":1216927,"slug":"wtmasturias","title":"SVG Attacks! WTMAsturias2018","description":"Slides for WTMAsturias 2018","width":1024,"height":576,"margin":0.05,"visibility":"all","published_at":"2018-05-02T06:34:15.475Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/90b6cb62619fed79fd8ea0f45af5be23/thumb.jpg?1523566041","view_count":682,"user":{"id":787594,"username":"carmenansio","name":"Carmen Ansio Ruiz","description":"","thumbnail_url":"https://lh6.googleusercontent.com/-0UBfU3aL6Co/AAAAAAAAAAI/AAAAAAAAWAk/tglCL8SGb2w/photo.jpg?sz=50","account_type":"pro","team_id":null,"settings":{"id":638803,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"montserrat","theme_color":"grey-blue","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":false,"rolling_links":false,"center":false,"shuffle":false,"should_loop":false,"share_notes":false,"slide_number":false,"slide_count":69,"rtl":false,"version":2,"collaborative":false,"deck_user_editor_limit":3,"data_updated_at":1526236314733,"font_typekit":"","font_google":"Lato","time_limit":null,"navigation_mode":"default","upsizing_enabled":null,"notes":{"9fea38f04b4522d8a4960113153c17a4":"Con canvas y a lo loco","60615d39f0c9853f7f0fd972dd6a13f8":"ORIENTADO A OBJETOS\nSE APLICAN A CSS Y VIENEN DEL DESARROLLO DE SOFTWARE","9864adf00bb8bcda145822ae60c47c97":"- Preprocessor agnostic.\n- Utility classes 1 solo propiedad !important;","2e81b38e5b8adcf117e17213650e01fb":"En una arquitectura si metes una librería de diseño ¿Dónde sobreescribes sus estilos? En vendor/librería o en components/componente-de-libreria","d072d9c957eb2175f06a0e24d9308604":"En una arquitectura si metes una librería de diseño ¿Dónde sobreescribes sus estilos? En vendor/librería o en components/componente-de-libreria","3469e0304eae9160471eafcfb6c0c8ab":"","e1fa9ca48247ebfbf684596830e64566":"initial: valor inicial del navegador\ninherit: valor del padre\nunset: fusion, si no tiene padre el inicial\nPrevalece el color del H1 (negro)","9d10b7c1b93bcf5d08a0b8c3661f4d23":"Si el HTML tiene 16, se hereda por defecto\n16px = 1em\nMedida relativa vs Absoluta\n","235f32eb4f716cddb73ca43e3dc42607":"Si añades important a un shorthand es como si se lo añadieses a cada propiedad del longhand\n\nSHORTHAND vs LONGHAND","79057527553483271789b50a188c57a3":"IGNACIO\n- El CSS depende de como esté el HTML\n- El CSS es poco reusable","3b6e9545803748b7caefa5eadbdb4064":"- El HTML depende del CSS\n- CSS reutilizable en otras partes de la web","1bb607d60816ea849c7d4cbeeacc217d":"- Ejemplos de clases abstractas muy reutilizables\n- Es mejor usar una clase larga que un chorro de elementos HTML","620c5deb61122889c42cc4423efe9a64":"- Los tres tipos de clases son semánticos pero las presentacionales no son muy recomendables usarlas","161048e031e0222a6f8d598e82a3cdf5":"IGNACIO\n- Comunica funcionalidad de la clase\n- Mantiene una especificidad baja\n\nEsquema para definir objetos y componentes. \nSobreescribir rápido, no tener anidación y es semántico.\nEsquema de nombrado un poco “rebuscado”, bastante horrible… \nCurva aprendizaje primera daily","ad74d56d84829d6fdff162be5c3e0703":"¿Por qué usar una arquitectura?\n- Escalabilidad\n- Porque tendemos a no documentar el código\n- Falta de conocimiento de los proyectos\n- Distintas preferencias a la hora de escribir código\n- Porque añadimos los estilos al final (a lo loco)\n\nREFACTOR PARTY / WHITEPAPERS","12b6e7df306fa48e8513fdff22801dd9":"- BUENO: estilos modularizados\n- MALO: Si cambiamos el estilo del HTML probablemente tengamos que cambiar el CSS ya que es muy reusado en nuestro proyecto","8bb9f820672679466429db69319de5cc":"- Spearar en dos clases:\n    - Estructura\n    - Aspecto","4e9955be77a935604835450a74dbe611":"- Spearar contendor y contenido","e15c5589293a0b24b8e7714330d7f41a":"- Reduce: La menos cantidad de selectores encadenados\n- Reusable: clases genéricas mejor que específicas\n- Reciclado: Mejor usa de la cascada","e49e0723af8d541a90cfd17e1e849714":"Orden:\n\n- Comentario\n- Clases\n- @extend\n- @include\n- Propiedades\n- Media Queries\n- Parent selector\n- Estados","474b1c68c8dfc7028aceed141d2eef26":"Problemas debido a:\n- Gran cantidad de veces el font-size\n- Uso del !important para corregir problemas de cascada\n- Debería ser lo más independiente de la localización\n- No dar estilo a elementos HTML\n- No usar elementos HTML + Clase (ul.nav)\n- No usar más de tres niveles de nesting (salvo pseudo clases y pseudo elementos)\n- No re hacer estilos por problemas de cascada\n- No usar números mágicos (extraerlos si acaso a una variable)\n- No usar @extend\n- Limitar la contatenación de clases (.nav.item.img)","3810aa1879b32e79c289edaa6a7a2db4":"Valor que toma cada uno de los elemntos de la hoja de estilos, hay selectores que tienen más peso/importancia que otros.\n","463be58ca1cdaad5d9ca9875899316fd":"Pseudo: estilar determinadas partes de un elemento\n\nConsiste en sumar puntos totales de una sentencia CSS en base a los elementos o selectores de los que está compuesto.","772f816788e0341e75b5fca7a3116584":"","a36210cb981e89151d320593747125c2":"ADA js / Consumer Experience\n","adcdbe9021784b459730a101790c09ae":"ID: compañero de viaje.\nPuedes convertirlo en un atributo con corchetes \n[id=\"igor\"] 100 a 10\nNo utilizar para STYLE","43e640e1c6b54a44a25ce98d77444a10":"Important + id = compañeros de vida\n...important + estilo inline =...666\nROMPE LA CASCADA","27dc043b6f10fee1df9e77bad714c715":"Especificida buena entre 30/40\nDos niveles = 30","e6a46f56aa667ee936f659d45faae1ee":"Resumen de \"malas prácticas\" evitar","c79023a50889c029e5858ecfb4a217e6":"Rojo toda su vida como mi pelo\nBODA","2d47ff86ca34fea7c94fa0d9ef89d3ec":"NEXT EJEMPLO JODE SLIDES CHULAS...","ed7f7bbaf771a796ca567d49c4230cf8":"IGOR de que color será? VERDE of course\ncada elemtento mantiene su espacio \" de calculo \"","15b55c3802d909f9e73f9686729d748a":":not = No tiene SPECIFICITY pero lo que vaya dentro Sí","39883543a74fbd3f56eb5e31042eb3cb":"Sabéis a que nos referímos?\nFilosofía reutilización del código","19b25c9e5f37e41627ac22132f855c0d":"Puntos SPRINT","8c78e0e3bd0ae8c0a2ccf6defa801435":"CARMEN\nEJEMPLO","bf24bb25933d8b4b7a97c6a02d4d7ebd":"BEM Example\nFEO de cojones","fa5aaf4ccca3c9f6d48f655f45c5e130":"Ben Frain: Escribir CSS es sencillo, lo complicado es escalarlo.\nUsar Herencia, cascada...\nArquitectura : metodología de un orden\n\nMONSTRUO INMANTENIBLE","2188bcc68d5a3c4de882fc0aa128ffc3":"IGNACIO\nBase: core /tags, herencia font-size\nLayout: patrón de diseño que no se repiten, específicas que no puedas ponerse en un módulo, 404, ABOUT.\nModulo: grupo de componentes\nThema: Accesibilidad = Problemas de visión de color, verlo de noche o de día (Beteve)","6a0a4ebd3fcbb518c391e83a8c220927":"IGNACIO","860bb04a9dc5ea1d92ab0a13935425a5":"CARMEN","bd72b5a6c0eb922d838a3f845e681087":"BROKEN WINDOW =  2 FASE\nCARGLASS = BUG","5f61a43aaf341919064f0d02b36350f3":"IGNACIO","899921ea9af56f5b9ac2e5acffa6519a":"IGNACIO","170442f2d6fcc7d1a23fd16e8067ffc6":"CARMEN","9c9a1e85c5394ad0636b5731a34b3c6b":"...esto es canvas!","ab615ff47a19f6340d63c44b6c0fce49":"El elemento canvas es un elemento definido en el código HTML con los atributos de anchura y altura. El verdadero poder del elemento canvas se lleva a cabo aprovechando la API de HTML5 Canvas. Esta API se utiliza al escribir JavaScript, el cual, puede acceder a la zona del canvas a través de un conjunto completo de funciones de dibujo, permitiendo así generar dinámicamente los gráficos.","0fe7e465bc9c96d87821ca509572ba2e":"La función fillRect() dibuja un cuadrado grande negro de 100 píxeles en cada lado. La función clearRect() luego borra un cuadrado de 60x60 píxeles del centro, y luego strokeRect() es llamado para crear un contorno rectangular de 50x50 píxeles dentro del cuadrado borrado.","f6a7dbf54f9e03a6e4d40ab53cf05dc7":"El primer paso para crear un trazo es llamar la función beginPath(). Internamente, los trazos son guardados como una lista de subtrazos (lineas, arcos, etc) los cuales juntos crean una forma. Todo tiempo que sea llamado este método la lista es reseteada y podemos empezar a dibujar nuevas formas.\n\nEl segundo paso es llamar los métodos que específican los trazos a crear. Los veremos en seguida.\n\nEl tercero, y un paso opcional, es llamar a la función closePath(). Este método trata de cerrar la forma dibujando una linea recta desde el punto actual al inicio. Si la forma ya ha sido cerrada o hay solamente un punto en la lista, la función hace nada.","c122eddbdb340d1f477fff2d446b845a":"Antes de que podamos empezar a dibujar, necesitamos hablar sobre la grid del canvas o el espacio de coordenadas","cb502e9971b28ebd387d3349861641c8":"El origen de esta cuadrícula está posicionado en la esquina superior izquierda (coordenada (0,0)). Todos los elementos estan posicionados de manera relativa a este punto, así que la posición de la esquina superior izquierda del cuadrado azul es de 'x' pixeles desde la izquierda y 'y' pixeles desde arriba (coordenada (x,y))","d3a1cc0cb5477466c795b82b2847e6cc":"Usar el elemento \u003ccanvas\u003e no es algo muy díficil pero necesita saber y entender los aspectos básicos del HTML y JavaScript","90cdea19876f2fa94b5db8d32274edaf":"","f2e4328fd88cbb54ea81ffaaded2a8ff":"Macromedia flash player, era un reproductor multimedia. A Macromedia se la comío Adobe. Básicamente para reproducir las animaciones creadas con Flash, tenías que instalar y sobretodo lo más tedioso, actualizar un plugin en el navegador. \"mas pesado que el clip de word\"","2d1cc47d54ab4d19af83ba51c15dd089":"canvas fue incluido en la especificacion html5 y pasó a ser un standard web","ec021da38a448d23d0c2607e3841dfb9":"WebGL permite crear contenido web y su representación 3D en un elemento canvas HTML en los navegadores que lo soporten sin el uso de plug-ins","bced22bb9f6c41315915cb9a53f8d6fd":"Point, click, touch...","d4f6efa10e8cc3ec1be1dd0ac4c5d98d":"The setInterval() method will continue calling the function until clearInterval() is called","4dcfc4b124755bb0ba3c21c52e3fcc5e":"ADA js / Consumer Experience\n","a143371da920a7153f896918e70ac31e":"ADA js / Consumer Experience\n","5f0229b6eaca3da204e86ae8489d8352":"ADA js / Consumer Experience\n","28304dd85071287e2401e088eeb8a1ad":"Everyone's workflow is different.\n\nMine is not necessarily best for you.\n\nWe're still finding out how to do it. It's clunky.","40a05e76241cee43d908bfc6d129fe2c":"You can use Sketch, Inkscape or AI.\n\nIf you're a Creative Cloud member you probably have AI. I use it.\n\nSublimeText sits in between as Mr Wolf (fixes problems, cleans up the mess).\n\n\n","71315664aab208fba4cc431ea6d8e083":"ADA js / Consumer Experience\n","f13b81265e038198aa298a945213e05b":"ADA js / Consumer Experience\n"}}};
+
+
+			// Use local fonts
+			SLConfig.fonts_url = 'lib/fonts/';
+		</script>
+
+		<script src="lib/reveal.js"></script>
+		<script src="lib/reveal-plugins.js"></script>
+		<script src="lib/offline.js"></script>
+
+		<!-- Initialize the presentation -->
+		<script>
+			Reveal.initialize({
+				width: 1024,
+				height: 576,
+				margin: 0.05,
+				
+
+				hash: true,
+				controls: true,
+				progress: true,
+				mouseWheel: false,
+				showNotes: false,
+				slideNumber: false,
+				fragmentInURL: true,
+
+				autoSlide: 0,
+				autoSlideStoppable: true,
+
+				autoAnimateMatcher: SL.deck.AutoAnimate.matcher,
+
+				center: false,
+				shuffle: false,
+				loop: false,
+				rtl: false,
+				navigationMode: "default",
+
+				transition: "slide",
+				backgroundTransition: "slide",
+
+				highlight: {
+					escapeHTML: false
+				},
+
+				plugins: [ RevealZoom, RevealNotes, RevealMarkdown, RevealHighlight ]
+			});
+		</script>
+
+		
+
+	</body>
+</html>
